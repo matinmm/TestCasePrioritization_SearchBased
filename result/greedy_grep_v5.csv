@@ -1,0 +1,810 @@
+Test Case,Fault,Command
+t12,"[1, 2]",-P[-G '\w' ../inputs/grep1.dat]
+t36,"[2, 5]",-P[-E '[^[:alnum:\]\]|include' ../inputs/grep*.dat]
+t38,"[2, 5]",-P[-E '[^[:alnum:\]\]' ../inputs/grep*.dat]
+t272,"[2, 5]",-P['[^[:alnum:\]\]\|include' ../inputs/grep*.dat]
+t274,"[2, 5]",-P[-G '[^[:alnum:\]\]' ../inputs/grep*.dat]
+t504,"[2, 5]",-P[-nbh '' ../inputs/grep*.dat]
+t524,"[2, 5]",-P[-vinbh 'include' ../inputs/grep*.dat]
+t526,"[2, 5]",-P[-vinb 'include' ../inputs/grep*.dat]
+t528,"[2, 5]",-P[-vinh 'include' ../inputs/grep*.dat]
+t530,"[2, 5]",-P[-vin 'include' ../inputs/grep*.dat]
+t532,"[2, 5]",-P[-vbhn 'include' ../inputs/grep*.dat]
+t536,"[2, 5]",-P[-vnh 'include' ../inputs/grep*.dat]
+t538,"[2, 5]",-P[-vn 'include' ../inputs/grep*.dat]
+t559,"[2, 5]",-P[-vibh include ../inputs/grep*.dat]
+t562,"[2, 5]",-P[-vib include ../inputs/grep*.dat]
+t565,"[2, 5]",-P[-vih include ../inputs/grep*.dat]
+t568,"[2, 5]",-P[-vi include ../inputs/grep*.dat]
+t573,"[2, 5]",-P[-vbh include ../inputs/grep*.dat]
+t576,"[2, 5]",-P[-vb include ../inputs/grep*.dat]
+t579,"[2, 5]",-P[-vh include ../inputs/grep*.dat]
+t582,"[2, 5]",-P[-v include ../inputs/grep*.dat]
+t806,"[1, 2]","-P [""\(\b\)\+"" ../inputs/grep1.dat]"
+t13,[2],-P[-G '[[:alpha:\]\]' ../inputs/grep1.dat]
+t16,[2],"-P[-E ""[[:graph:\]\]"" ../inputs/grep1.dat]"
+t17,[2],"-P[-G ""[[:lower:\]\]"" ../inputs/grep1.dat]"
+t18,[2],"-P[-G ""[[:print:\]\]"" ../inputs/grep1.dat]"
+t20,[2],-P[-G '[[:space:\]\]' ../inputs/grep1.dat]
+t22,[2],-P[-E '[[:xdigit:\]\]' ../inputs/grep1.dat]
+t23,[2],-P[-E . ../inputs/grep1.dat]
+t27,[2],-P[-E 'b*' ../inputs/grep1.dat]
+t29,[3],"-P[-E 'a{,3}' ../inputs/grep1.dat]"
+t30,[2],"-P[-E 'a{1,5}' ../inputs/grep1.dat]"
+t32,[2],-P[-E '[ab\]|include' ../inputs/grep*.dat]
+t35,[4],-P[-E 'include|\W''reg' ../inputs/grep*.dat]
+t219,[6],"-P[-E ""\bif \(?g|if \(""""?out\b"" ../inputs/grep*.dat]"
+t247,[6],"-P[-E ""\bif \({1}g|if \(""""{1}out\b"" ../inputs/grep*.dat]"
+t267,[2],-P[-G '[ab\]\|include' ../inputs/grep*.dat]
+t270,[4],-P[-G 'include\|\W''reg' ../inputs/grep*.dat]
+t271,[4],-P[-G '\(include\|\W\)''reg' ../inputs/grep*.dat]
+t434,[6],"-P[""\bif (\?g\|if (""""\?out\b"" ../inputs/grep*.dat]"
+t458,[6],"-P[-G ""\bif (\{1\}g\|if (""""\{1\}out\b"" ../inputs/grep*.dat]"
+t483,[7],-P[-V]
+t496,[8],"-P[-L """" ../inputs/grepNon.dat]"
+t499,[8],"-P[-c """" ../inputs/grepNon.dat]"
+t502,[8],-P[-nbh '' ../inputs/grepNon.dat]
+t503,[2],-P[-nbh '' ../inputs/grep1.dat]
+t523,[2],-P[-vinbh 'include' ../inputs/grep1.dat]
+t525,[2],-P[-vinb 'include' ../inputs/grep1.dat]
+t527,[2],-P[-vinh 'include' ../inputs/grep1.dat]
+t529,[2],-P[-vin 'include' ../inputs/grep1.dat]
+t531,[2],-P[-vbhn 'include' ../inputs/grep1.dat]
+t533,[2],-P[-vbn 'include' ../inputs/grep1.dat]
+t534,[5],-P[-vbn 'include' ../inputs/grep*.dat]
+t535,[2],-P[-vnh 'include' ../inputs/grep1.dat]
+t537,[2],-P[-vn 'include' ../inputs/grep1.dat]
+t557,[9],-P[-vibh TGGGG ../inputs/grepBinary]
+t558,[2],-P[-vibh include ../inputs/grep1.dat]
+t560,[9],-P[-vib TGGGG ../inputs/grepBinary]
+t561,[2],-P[-vib include ../inputs/grep1.dat]
+t563,[9],-P[-vih TGGGG ../inputs/grepBinary]
+t564,[2],-P[-vih include ../inputs/grep1.dat]
+t566,[9],-P[-vi TGGGG ../inputs/grepBinary]
+t567,[2],-P[-vi include ../inputs/grep1.dat]
+t571,[9],-P[-vbh Tgggg ../inputs/grepBinary]
+t572,[2],-P[-vbh include ../inputs/grep1.dat]
+t574,[9],-P[-vb Tgggg ../inputs/grepBinary]
+t575,[2],-P[-vb include ../inputs/grep1.dat]
+t577,[9],-P[-vh Tgggg ../inputs/grepBinary]
+t578,[2],-P[-vh include ../inputs/grep1.dat]
+t580,[9],-P[-v Tgggg ../inputs/grepBinary]
+t581,[2],-P[-v include ../inputs/grep1.dat]
+t621,[8],-P [-f 12345 ../inputs/grep1.dat]
+t623,[8],-P [-Y 12345 ../inputs/grep1.dat]
+t624,[8],-P [-A -12345 ../inputs/grep1.dat]
+t625,[8],-P [-B -12345 ../inputs/grep1.dat]
+t626,[8],-P [-F -E 12345 ../inputs/grep1.dat]
+t627,[8],-P [-E -F 12345 ../inputs/grep1.dat]
+t628,[8],-P [-E -G 12345 ../inputs/grep1.dat]
+t629,[8],-P [-G -X 12345 ../inputs/grep1.dat]
+t630,[8],-P [-f nosuchfile ../inputs/grep1.dat]
+t631,[8],-P [-f ../inputs/grep1.dat ../inputs/grep1.dat]
+t641,[8],-P [- -- 12345 ../inputs/grep1.dat]
+t645,[8],-P [-ff]
+t646,[8],-P [-f]
+t651,[2],"-P [""1\?\+"" ../inputs/grep1.dat]"
+t652,[2],"-P [""1\+\?"" ../inputs/grep1.dat]"
+t653,[8],"-P [""["" ../inputs/grep1.dat]"
+t654,[8],"-P [""a["" ../inputs/grep1.dat]"
+t655,[8],"-P [""a*["" ../inputs/grep1.dat]"
+t656,[8],"-P [""[a"" ../inputs/grep1.dat]"
+t657,[8],"-P [""[1"" ../inputs/grep1.dat]"
+t658,[8],"-P [""[1-9"" ../inputs/grep1.dat]"
+t660,[2],"-P [""[a-\]"" ../inputs/grep1.dat]"
+t661,[2],"-P [""[1a-\]"" ../inputs/grep1.dat]"
+t662,[8],"-P [""[[:alpha:\]-5\]"" ../inputs/grep1.dat]"
+t663,[8],"-P [""[z[:digit:\]-f\]"" ../inputs/grep1.dat]"
+t664,[8],"-P [""[[:alnum:\]-9\]"" ../inputs/grep1.dat]"
+t666,[10],"-P [""[a-c-z\]"" ../inputs/grep1.dat]"
+t667,[11],"-P [""[1A-Z-A\]"" ../inputs/grep1.dat]"
+t668,[8],"-P [""[[:digit:\]-1-9\]"" ../inputs/grep1.dat]"
+t669,[8],"-P [""[[:digit:\]-A-Z\]"" ../inputs/grep1.dat]"
+t670,[8],"-P [""[[:digit:\]-a-z\]"" ../inputs/grep1.dat]"
+t671,[8],"-P [""[1-2-"" ../inputs/grep1.dat]"
+t672,[8],"-P [""[1A-Z-"" ../inputs/grep1.dat]"
+t673,[8],"-P [""[Aa-z-"" ../inputs/grep1.dat]"
+t674,[8],"-P [""[1-"" ../inputs/grep1.dat]"
+t675,[8],"-P [""[1A-"" ../inputs/grep1.dat]"
+t676,[8],"-P [""[Aa-"" ../inputs/grep1.dat]"
+t677,[8],"-P [""[[:"" ../inputs/grep1.dat]"
+t678,[8],"-P [""a[[:"" ../inputs/grep1.dat]"
+t679,[8],"-P [""1-9[[:"" ../inputs/grep1.dat]"
+t680,[8],"-P [""[[:a:\]\]"" ../inputs/grep1.dat]"
+t681,[8],"-P [""[[:1:\]\]"" ../inputs/grep1.dat]"
+t682,[8],"-P [""[[:abcdefg:\]\]"" ../inputs/grep1.dat]"
+t683,[8],"-P [""[[:alpha:\]"" ../inputs/grep1.dat]"
+t684,[8],"-P [""[a[:digit:\]"" ../inputs/grep1.dat]"
+t685,[8],"-P [""[[:alnum:\]"" ../inputs/grep1.dat]"
+t686,[8],-P ['\' ../inputs/grep1.dat]
+t687,[8],-P ['if\' ../inputs/grep1.dat]
+t688,[8],-P ['else\' ../inputs/grep1.dat]
+t689,[12],-P ['\`' ../inputs/grep1.dat]
+t692,[13],"-P [""\'"" ../inputs/grep1.dat]"
+t693,[14],"-P [""if\'"" ../inputs/grep1.dat]"
+t695,[8],"-P [""\1"" ../inputs/grep1.dat]"
+t696,[8],"-P [""\2"" ../inputs/grep1.dat]"
+t697,[8],"-P [""\3"" ../inputs/grep1.dat]"
+t698,[8],"-P [""\4"" ../inputs/grep1.dat]"
+t699,[8],"-P [""\5"" ../inputs/grep1.dat]"
+t700,[8],"-P [""\6"" ../inputs/grep1.dat]"
+t701,[8],"-P [""\7"" ../inputs/grep1.dat]"
+t702,[8],"-P [""\8"" ../inputs/grep1.dat]"
+t703,[8],"-P [""\9"" ../inputs/grep1.dat]"
+t704,[8],"-P [""\)"" ../inputs/grep1.dat]"
+t705,[8],"-P [""if\)"" ../inputs/grep1.dat]"
+t706,[8],"-P [""[a-z\]\)"" ../inputs/grep1.dat]"
+t707,[15],"-P [""\{"" ../inputs/grep1.dat]"
+t708,[8],"-P [""a\{"" ../inputs/grep1.dat]"
+t709,[8],"-P [""[1-9\]\{"" ../inputs/grep1.dat]"
+t710,[8],"-P [""\{2,1}"" ../inputs/grep1.dat]"
+t711,[8],"-P [""a\{2,1}"" ../inputs/grep1.dat]"
+t712,[8],"-P [""\{1"" ../inputs/grep1.dat]"
+t713,[8],"-P [""\{1,2"" ../inputs/grep1.dat]"
+t714,[8],"-P [""a\{1"" ../inputs/grep1.dat]"
+t715,[8],"-P [""\{1\{"" ../inputs/grep1.dat]"
+t716,[8],"-P [""\{1,2\{"" ../inputs/grep1.dat]"
+t717,[8],"-P [""[a-z\]\{1,2\{"" ../inputs/grep1.dat]"
+t718,[2],"-P [""a\{1,2\}"" ../inputs/grep1.dat]"
+t721,[2],"-P [""A\{0\}"" ../inputs/grep1.dat]"
+t722,[2],"-P [""1\{0\}"" ../inputs/grep1.dat]"
+t723,[2],"-P [""[a-z\]\{0\}"" ../inputs/grep1.dat]"
+t724,[8],"-P [""\("" ../inputs/grep1.dat]"
+t725,[8],"-P [""a\("" ../inputs/grep1.dat]"
+t726,[8],"-P [""a\(a"" ../inputs/grep1.dat]"
+t727,[2],"-P [""\|\(a\|b\)1*2\?3\+"" ../inputs/grep1.dat]"
+t728,[2],"-P [""\|\(if\|else\)1*2\?3\+"" ../inputs/grep1.dat]"
+t729,[2],"-P [""\|\(for\|12345\)a*b\?c\+"" ../inputs/grep1.dat]"
+t730,[8],"-P [""a"" ../inputs/biginput.dat]"
+t731,[8],"-P [""[a-z\]"" ../inputs/biginput.dat]"
+t732,[8],"-P [""5\|7"" ../inputs/biginput.dat]"
+t733,[2],-P [-5 if ../inputs/grep1.dat]
+t736,[2],"-P [""[[:alnum:\]\]"" ../inputs/grep1.dat]"
+t738,[2],"-P [""a*[[:alnum:\]\]"" ../inputs/grep1.dat]"
+t739,[8],-P [-f ../inputs/biginput.dat ../inputs/grep1.dat]
+t740,[8],-P [-f ../inputs/biginput2.dat ../inputs/grep1.dat]
+t741,[8],-P [-f ../inputs/input_enter1 ../inputs/grep1.dat]
+t742,[8],-P [-f ../inputs/input_enter2 ../inputs/grep1.dat]
+t743,[8],-P [-f ../inputs/input_enter3 ../inputs/grep1.dat]
+t744,[8],"-P [""\\"" ../inputs/grep1.dat]"
+t745,[8],"-P [""1\\"" ../inputs/grep1.dat]"
+t746,[8],"-P [""a\\"" ../inputs/grep1.dat]"
+t750,[2],"-P [""1\|^"" ../inputs/grep1.dat]"
+t751,[2],"-P [""a\|^"" ../inputs/grep1.dat]"
+t756,[2],-P ['$' ../inputs/grep1.dat]
+t767,[16],"-P [""[A-B\]"" ../inputs/grep1.dat]"
+t773,[2],"-P [""if\+"" ../inputs/grep1.dat]"
+t789,[17],"-P [-i ""[A-z1\]"" ../inputs/grep1.dat]"
+t790,[18],"-P [-i ""[C-x2\]"" ../inputs/grep1.dat]"
+t794,[2],-P [-X grep if ../inputs/grep1.dat]
+t796,[2],-P [-e a -e b ../inputs/grep1.dat]
+t797,[2],-P [-e if -e else ../inputs/grep1.dat]
+t798,[8],-P [-e 12345 -e abcde -f ../inputs/input_1.dat ../inputs/grep1.dat]
+t799,[8],-P [-e if -e else -f ../inputs/input_1.dat ../inputs/grep1.dat]
+t800,[8],-P [-e 1 -e 2 -e 3 -e 4 -e 5 -e 12345 -f ../inputs/input_1.dat ../inputs/grep1.dat]
+t801,[8],-P [-f ../inputs/input_2.dat ../inputs/grep1.dat]
+t802,[8],-P [-i -f ../inputs/input_2.dat ../inputs/grep1.dat]
+t803,[8],-P [-v -f ../inputs/input_2.dat ../inputs/grep1.dat]
+t804,[2],"-P [""\(\b\)*"" ../inputs/grep1.dat]"
+t805,[2],"-P [""if\(\b\)*"" ../inputs/grep1.dat]"
+t1,[],-P[-n I ../inputs/grep1.dat]
+t2,[],-P[-n 1 ../inputs/grep1.dat]
+t3,[],-P[-E '\?' ../inputs/grep1.dat]
+t4,[],-P[-G '\?' ../inputs/grep1.dat]
+t5,[],-P[-G '?' ../inputs/grep1.dat]
+t6,[],-P[-F '?' ../inputs/grep1.dat]
+t7,[],-P[-F '/*#include' ../inputs/grep1.dat]
+t8,[],-P[-G '[1-5\]' ../inputs/grep1.dat]
+t9,[],-P[-E -c '[^a-z\]' ../inputs/grep1.dat]
+t10,[],-P[-G '[X^YZ\]' ../inputs/grep1.dat]
+t11,[],-P[-E '[1-\]' ../inputs/grep1.dat]
+t14,[],"-P[-E ""[[:cntrl:\]\]"" ../inputs/grep1.dat]"
+t15,[],"-P[-E ""[[:digit:\]\]"" ../inputs/grep1.dat]"
+t19,[],-P[-G '[[:punct:\]\]' ../inputs/grep1.dat]
+t21,[],-P[-G '[[:upper:\]\]' ../inputs/grep1.dat]
+t24,[],-P[-E 'b$' ../inputs/grep1.dat]
+t25,[],-P[-E 'b\>' ../inputs/grep1.dat]
+t26,[],-P[-E 'b\B' ../inputs/grep1.dat]
+t28,[],"-P[-E 'a{2,}' ../inputs/grep1.dat]"
+t31,[],-P[-E 'dfaanalyze|ab''[lo\]' ../inputs/grep*.dat]
+t33,[],-P[-E '[ab\]''le' ../inputs/grep*.dat]
+t34,[],-P[-E '[12\]' ../inputs/grep*.dat]
+t37,[],-P[-E '[^[:alnum:\]\]''include' ../inputs/grep*.dat]
+t39,[],-P[-E 'In.lude|\?''?%' ../inputs/grep*.dat]
+t40,[],-P[-E 'in.lude|\??''%' ../inputs/grep*.dat]
+t41,[],-P[-E 'In.lude|\?(?''%)' ../inputs/grep*.dat]
+t42,[],-P[-Ec 'In.lude|\??' ../inputs/grep*.dat]
+t43,[],-P[-E '\?''?.:' ../inputs/grep*.dat]
+t44,[],-P[-E '\*(?''p.)' ../inputs/grep*.dat]
+t45,[],-P[-E '\*?p.eg' ../inputs/grep*.dat]
+t46,[],-P[-E 'Include|n''?.lud' ../inputs/grep*.dat]
+t47,[],-P[-E 'main|n?''.lud' ../inputs/grep*.dat]
+t48,[],-P[-E 'Include|n(?''.lud)' ../inputs/grep*.dat]
+t49,[],-P[-E 'Include|n?.lude' ../inputs/grep*.dat]
+t50,[],-P[-E 'n''?.lude' ../inputs/grep*.dat]
+t51,[],-P[-E 'n(?''.lud)' ../inputs/grep*.dat]
+t52,[],-P[-E 'n?.lud' ../inputs/grep*.dat]
+t53,[],-P[-E 'In.lude|\?''+%' ../inputs/grep*.dat]
+t54,[],-P[-E 'in.lude|\?+''%' ../inputs/grep*.dat]
+t55,[],-P[-E 'In.lude|\?(+''%)' ../inputs/grep*.dat]
+t56,[],-P[-Ec 'In.lude|\?+' ../inputs/grep*.dat]
+t57,[],-P[-E '\?''+.:' ../inputs/grep*.dat]
+t58,[],-P[-E '\*(+''p.)' ../inputs/grep*.dat]
+t59,[],-P[-E '\*+p.eg' ../inputs/grep*.dat]
+t60,[],-P[-E 'Include|n''+.lud' ../inputs/grep*.dat]
+t61,[],-P[-E 'Include|n+''.lud' ../inputs/grep*.dat]
+t62,[],-P[-E 'Include|n(+''.lud)' ../inputs/grep*.dat]
+t63,[],-P[-E 'Include|n+.lude' ../inputs/grep*.dat]
+t64,[],-P[-E 'n''+.lude' ../inputs/grep*.dat]
+t65,[],-P[-E 'n(+''.lud)' ../inputs/grep*.dat]
+t66,[],-P[-E 'n+.lud' ../inputs/grep*.dat]
+t67,[],-P[-E 'In.lude|\?''{1}%' ../inputs/grep*.dat]
+t68,[],-P[-E 'in.lude|\?''{1}%' ../inputs/grep*.dat]
+t69,[],-P[-E 'In.lude|\?({1}''%)' ../inputs/grep*.dat]
+t70,[],-P[-Ec 'In.lude|\?{1}' ../inputs/grep*.dat]
+t71,[],-P[-E '\?''{1}.:' ../inputs/grep*.dat]
+t72,[],-P[-E '\*({1}''p.)' ../inputs/grep*.dat]
+t73,[],-P[-E '\*{1}p.eg' ../inputs/grep*.dat]
+t74,[],-P[-E 'Include|n''{1}.lud' ../inputs/grep*.dat]
+t75,[],-P[-E 'Include|n{1}''.lud' ../inputs/grep*.dat]
+t76,[],-P[-E 'Include|n({1}''.lud)' ../inputs/grep*.dat]
+t77,[],-P[-E 'Include|n{1}.lude' ../inputs/grep*.dat]
+t78,[],-P[-E 'n''{1}.lude' ../inputs/grep*.dat]
+t79,[],-P[-E 'n({1}''.lud)' ../inputs/grep*.dat]
+t80,[],-P[-E 'n{1}.lud' ../inputs/grep*.dat]
+t81,[],-P[-E 'In.lude|\?''%' ../inputs/grep*.dat]
+t82,[],-P[-Ec 'In.lude|\?' ../inputs/grep*.dat]
+t83,[],-P[-E '\*\*''p.' ../inputs/grep*.dat]
+t84,[],-P[-E '\*p.eg' ../inputs/grep*.dat]
+t85,[],-P[-E 'Include|\?''?%' ../inputs/grep*.dat]
+t86,[],-P[-E 'include|\?''?%' ../inputs/grep*.dat]
+t87,[],-P[-E 'Include|\?(?''%)' ../inputs/grep*.dat]
+t88,[],-P[-Ec 'Include|\??' ../inputs/grep*.dat]
+t89,[],-P[-E '\?''? :' ../inputs/grep*.dat]
+t90,[],-P[-E '\*(?''p)' ../inputs/grep*.dat]
+t91,[],-P[-E '\*?preg' ../inputs/grep*.dat]
+t92,[],-P[-E 'Include|n''?clud' ../inputs/grep*.dat]
+t93,[],-P[-E 'main|in?''clude' ../inputs/grep*.dat]
+t94,[],-P[-E 'Include|n(?''clud)' ../inputs/grep*.dat]
+t95,[],-P[-E 'main|n?clude' ../inputs/grep*.dat]
+t96,[],-P[-E 'n''?clude' ../inputs/grep*.dat]
+t97,[],-P[-E 'n(?''clud)' ../inputs/grep*.dat]
+t98,[],-P[-E 'n?clud' ../inputs/grep*.dat]
+t99,[],-P[-E 'Include|\?''+%' ../inputs/grep*.dat]
+t100,[],-P[-E 'include|\?''+%' ../inputs/grep*.dat]
+t101,[],-P[-E 'Include|\?(+''%)' ../inputs/grep*.dat]
+t102,[],-P[-Ec 'Include|\?+' ../inputs/grep*.dat]
+t103,[],-P[-E '\?''+ 0' ../inputs/grep*.dat]
+t104,[],-P[-E '\*(+''pattern)' ../inputs/grep*.dat]
+t105,[],-P[-E '\*+preg' ../inputs/grep*.dat]
+t106,[],-P[-E 'main|n''+clud' ../inputs/grep*.dat]
+t107,[],-P[-E 'Include|n+''clud' ../inputs/grep*.dat]
+t108,[],-P[-E 'Include|n(+''clud)' ../inputs/grep*.dat]
+t109,[],-P[-E 'Include|n+clude' ../inputs/grep*.dat]
+t110,[],-P[-E 'n''+clude' ../inputs/grep*.dat]
+t111,[],-P[-E 'n(+''clud)' ../inputs/grep*.dat]
+t112,[],-P[-E 'n+clud' ../inputs/grep*.dat]
+t113,[],-P[-E 'Include|\?''{1}%' ../inputs/grep*.dat]
+t114,[],-P[-E 'include|\?{1}''%' ../inputs/grep*.dat]
+t115,[],-P[-E 'Include|\?({1}''%)' ../inputs/grep*.dat]
+t116,[],-P[-Ec 'Include|\?{1}' ../inputs/grep*.dat]
+t117,[],-P[-E '\?''{1} 0' ../inputs/grep*.dat]
+t118,[],-P[-E '\*({1}''pr)' ../inputs/grep*.dat]
+t119,[],-P[-E '\*{1}preg' ../inputs/grep*.dat]
+t120,[],-P[-E 'Include|n''{1}clud' ../inputs/grep*.dat]
+t121,[],-P[-E 'main|n{1}''clud' ../inputs/grep*.dat]
+t122,[],-P[-E 'Include|n({1}''clud)' ../inputs/grep*.dat]
+t123,[],-P[-E 'Include|n{1}clude' ../inputs/grep*.dat]
+t124,[],-P[-E 'n''{1}clude' ../inputs/grep*.dat]
+t125,[],-P[-E 'n({1}''clud)' ../inputs/grep*.dat]
+t126,[],-P[-E 'n{1}clud' ../inputs/grep*.dat]
+t127,[],-P[-E 'Include|\?''%' ../inputs/grep*.dat]
+t128,[],-P[-Ec 'Include|\?' ../inputs/grep*.dat]
+t129,[],-P[-E 'static'' int' ../inputs/grep*.dat]
+t130,[],-P[-E '\*preg' ../inputs/grep*.dat]
+t131,[],"-P[-E ""[\]X\]|end"""" -"" ../inputs/grep*.dat]"
+t132,[],"-P[-E ""[\]X\]|end"" ../inputs/grep*.dat]"
+t133,[],"-P[-E ""[\]X\]"""" -"" ../inputs/grep*.dat]"
+t134,[],"-P[-E ""[\]X\]"" ../inputs/grep*.dat]"
+t135,[],"-P[-E ""^if \(?g|if \(""""?out"" ../inputs/grep*.dat]"
+t136,[],"-P[-E ""^if \(?g|^if \(?""""out"" ../inputs/grep*.dat]"
+t137,[],"-P[-E ""^if \(?g|^if \((?""""out)"" ../inputs/grep*.dat]"
+t138,[],"-P[-E ""^if \(?g|^if out"" ../inputs/grep*.dat]"
+t139,[],"-P[-E ""^if \(""""?gout"" ../inputs/grep*.dat]"
+t140,[],"-P[-E ""^if \((?""""gout)"" ../inputs/grep*.dat]"
+t141,[],"-P[-E ""^if \(?gout"" ../inputs/grep*.dat]"
+t142,[],"-P[-E ""^if a?g|if a""""?out"" ../inputs/grep*.dat]"
+t143,[],"-P[-E ""^if a?g|^if a?""""out"" ../inputs/grep*.dat]"
+t144,[],"-P[-E ""^if a?g|^if a(?""""out)"" ../inputs/grep*.dat]"
+t145,[],"-P[-E ""^if a?g|^if out"" ../inputs/grep*.dat]"
+t146,[],"-P[-E ""^if a""""?gout"" ../inputs/grep*.dat]"
+t147,[],"-P[-E ""^if a(?""""gout)"" ../inputs/grep*.dat]"
+t148,[],"-P[-E ""^if a?gout"" ../inputs/grep*.dat]"
+t149,[],"-P[-E ""^if \(+g|if \(""""+out"" ../inputs/grep*.dat]"
+t150,[],"-P[-E ""^if \(+g|^if \(+""""out"" ../inputs/grep*.dat]"
+t151,[],"-P[-E ""^if \(+g|^if \((+""""out)"" ../inputs/grep*.dat]"
+t152,[],"-P[-E ""^if \(+g|^if out"" ../inputs/grep*.dat]"
+t153,[],"-P[-E ""^if \(""""+gout"" ../inputs/grep*.dat]"
+t154,[],"-P[-E ""^if \((+""""gout)"" ../inputs/grep*.dat]"
+t155,[],"-P[-E ""^if \(+gout"" ../inputs/grep*.dat]"
+t156,[],"-P[-E ""^if a+g|if a""""+out"" ../inputs/grep*.dat]"
+t157,[],"-P[-E ""^if a+g|^if a+""""out"" ../inputs/grep*.dat]"
+t158,[],"-P[-E ""^if a+g|^if a(+""""out)"" ../inputs/grep*.dat]"
+t159,[],"-P[-E ""^if a+g|^if out"" ../inputs/grep*.dat]"
+t160,[],"-P[-E ""^if a""""+gout"" ../inputs/grep*.dat]"
+t161,[],"-P[-E ""^if a(+""""gout)"" ../inputs/grep*.dat]"
+t162,[],"-P[-E ""^if a+gout"" ../inputs/grep*.dat]"
+t163,[],"-P[-E ""^if \({1}g|if \(""""{1}out"" ../inputs/grep*.dat]"
+t164,[],"-P[-E ""^if \({1}g|^if \({1}""""out"" ../inputs/grep*.dat]"
+t165,[],"-P[-E ""^if \({1}g|^if \(({1}""""out)"" ../inputs/grep*.dat]"
+t166,[],"-P[-E ""^if \({1}g|^if out"" ../inputs/grep*.dat]"
+t167,[],"-P[-E ""^if \(""""{1}gout"" ../inputs/grep*.dat]"
+t168,[],"-P[-E ""^if \(({1}""""gout)"" ../inputs/grep*.dat]"
+t169,[],"-P[-E ""^if \({1}gout"" ../inputs/grep*.dat]"
+t170,[],"-P[-E ""^if a{1}g|if a""""{1}out"" ../inputs/grep*.dat]"
+t171,[],"-P[-E ""^if a{1}g|^if a{1}""""out"" ../inputs/grep*.dat]"
+t172,[],"-P[-E ""^if a{1}g|^if a({1}""""out)"" ../inputs/grep*.dat]"
+t173,[],"-P[-E ""^if a{1}g|^if out"" ../inputs/grep*.dat]"
+t174,[],"-P[-E ""^if a""""{1}gout"" ../inputs/grep*.dat]"
+t175,[],"-P[-E ""^if a({1}""""gout)"" ../inputs/grep*.dat]"
+t176,[],"-P[-E ""^if a{1}gout"" ../inputs/grep*.dat]"
+t177,[],"-P[-E ""\<if \(?g|if \(""""?out"" ../inputs/grep*.dat]"
+t178,[],"-P[-E ""\<if \(?g|\<if \(?""""out"" ../inputs/grep*.dat]"
+t179,[],"-P[-E ""\<if \(?g|\<if \((?""""out)"" ../inputs/grep*.dat]"
+t180,[],"-P[-E ""\<if \(?g|\<if out"" ../inputs/grep*.dat]"
+t181,[],"-P[-E ""\<if \(""""?gout"" ../inputs/grep*.dat]"
+t182,[],"-P[-E ""\<if \((?""""gout)"" ../inputs/grep*.dat]"
+t183,[],"-P[-E ""\<if \(?gout"" ../inputs/grep*.dat]"
+t184,[],"-P[-E ""\<if a?g|if a""""?out"" ../inputs/grep*.dat]"
+t185,[],"-P[-E ""\<if a?g|\<if a?""""out"" ../inputs/grep*.dat]"
+t186,[],"-P[-E ""\<if a?g|\<if a(?""""out)"" ../inputs/grep*.dat]"
+t187,[],"-P[-E ""\<if a?g|\<if out"" ../inputs/grep*.dat]"
+t188,[],"-P[-E ""\<if a""""?gout"" ../inputs/grep*.dat]"
+t189,[],"-P[-E ""\<if a(?""""gout)"" ../inputs/grep*.dat]"
+t190,[],"-P[-E ""\<if a?gout"" ../inputs/grep*.dat]"
+t191,[],"-P[-E ""\<if \(+g|if \(""""+out"" ../inputs/grep*.dat]"
+t192,[],"-P[-E ""\<if \(+g|\<if \(+""""out"" ../inputs/grep*.dat]"
+t193,[],"-P[-E ""\<if \(+g|\<if \((+""""out)"" ../inputs/grep*.dat]"
+t194,[],"-P[-E ""\<if \(+g|\<if out"" ../inputs/grep*.dat]"
+t195,[],"-P[-E ""\<if \(""""+gout"" ../inputs/grep*.dat]"
+t196,[],"-P[-E ""\<if \((+""""gout)"" ../inputs/grep*.dat]"
+t197,[],"-P[-E ""\<if \(+gout"" ../inputs/grep*.dat]"
+t198,[],"-P[-E ""\<if a+g|if a""""+out"" ../inputs/grep*.dat]"
+t199,[],"-P[-E ""\<if a+g|\<if a+""""out"" ../inputs/grep*.dat]"
+t200,[],"-P[-E ""\<if a+g|\<if a(+""""out)"" ../inputs/grep*.dat]"
+t201,[],"-P[-E ""\<if a+g|\<if out"" ../inputs/grep*.dat]"
+t202,[],"-P[-E ""\<if a""""+gout"" ../inputs/grep*.dat]"
+t203,[],"-P[-E ""\<if a(+""""gout)"" ../inputs/grep*.dat]"
+t204,[],"-P[-E ""\<if a+gout"" ../inputs/grep*.dat]"
+t205,[],"-P[-E ""\<if \({1}g|if \(""""{1}out"" ../inputs/grep*.dat]"
+t206,[],"-P[-E ""\<if \({1}g|\<if \({1}""""out"" ../inputs/grep*.dat]"
+t207,[],"-P[-E ""\<if \({1}g|\<if \(({1}""""out)"" ../inputs/grep*.dat]"
+t208,[],"-P[-E ""\<if \({1}g|\<if out"" ../inputs/grep*.dat]"
+t209,[],"-P[-E ""\<if \(""""{1}gout"" ../inputs/grep*.dat]"
+t210,[],"-P[-E ""\<if \(({1}""""gout)"" ../inputs/grep*.dat]"
+t211,[],"-P[-E ""\<if \({1}gout"" ../inputs/grep*.dat]"
+t212,[],"-P[-E ""\<if a{1}g|if a""""{1}out"" ../inputs/grep*.dat]"
+t213,[],"-P[-E ""\<if a{1}g|\<if a{1}""""out"" ../inputs/grep*.dat]"
+t214,[],"-P[-E ""\<if a{1}g|\<if a({1}""""out)"" ../inputs/grep*.dat]"
+t215,[],"-P[-E ""\<if a{1}g|\<if out"" ../inputs/grep*.dat]"
+t216,[],"-P[-E ""\<if a""""{1}gout"" ../inputs/grep*.dat]"
+t217,[],"-P[-E ""\<if a({1}""""gout)"" ../inputs/grep*.dat]"
+t218,[],"-P[-E ""\<if a{1}gout"" ../inputs/grep*.dat]"
+t220,[],"-P[-E ""\bif \(?g|\bif \(?""""out"" ../inputs/grep*.dat]"
+t221,[],"-P[-E ""\bif \(?g\b|\bif \((?""""out)"" ../inputs/grep*.dat]"
+t222,[],"-P[-E ""\bif \(?g\b|\bif out"" ../inputs/grep*.dat]"
+t223,[],"-P[-E ""\bif \(""""?gout"" ../inputs/grep*.dat]"
+t224,[],"-P[-E ""\bif \((?""""gout)"" ../inputs/grep*.dat]"
+t225,[],"-P[-E ""\bif \(?gout\b"" ../inputs/grep*.dat]"
+t226,[],"-P[-E ""\bif a?g|if a""""?out"" ../inputs/grep*.dat]"
+t227,[],"-P[-E ""\bif a?g|\bif a?""""out"" ../inputs/grep*.dat]"
+t228,[],"-P[-E ""\bif a?g|\bif a(?""""out)"" ../inputs/grep*.dat]"
+t229,[],"-P[-E ""\bif a?g|\bif out\b"" ../inputs/grep*.dat]"
+t230,[],"-P[-E ""\bif a""""?gout\b"" ../inputs/grep*.dat]"
+t231,[],"-P[-E ""\bif a(?""""gout)"" ../inputs/grep*.dat]"
+t232,[],"-P[-E ""\bif a?gout"" ../inputs/grep*.dat]"
+t233,[],"-P[-E ""\bif \(+g\b|if \(""""+out"" ../inputs/grep*.dat]"
+t234,[],"-P[-E ""\bif \(+g|\bif \(+""""out"" ../inputs/grep*.dat]"
+t235,[],"-P[-E ""\bif \(+g|\bif \((+""""out)"" ../inputs/grep*.dat]"
+t236,[],"-P[-E ""\bif \(+g|\bif out"" ../inputs/grep*.dat]"
+t237,[],"-P[-E ""\bif \(""""+gout\b"" ../inputs/grep*.dat]"
+t238,[],"-P[-E ""\bif \((+""""gout)"" ../inputs/grep*.dat]"
+t239,[],"-P[-E ""\bif \(+gout"" ../inputs/grep*.dat]"
+t240,[],"-P[-E ""\bif a+g\b|if a""""+out"" ../inputs/grep*.dat]"
+t241,[],"-P[-E ""if a+g\b|\bif a+""""out"" ../inputs/grep*.dat]"
+t242,[],"-P[-E ""\bif a+g|\bif a(+""""out)"" ../inputs/grep*.dat]"
+t243,[],"-P[-E ""\bif a+g|\bif out"" ../inputs/grep*.dat]"
+t244,[],"-P[-E ""if a""""+gout\b"" ../inputs/grep*.dat]"
+t245,[],"-P[-E ""\bif a(+""""gout)"" ../inputs/grep*.dat]"
+t246,[],"-P[-E ""if a+gout\b"" ../inputs/grep*.dat]"
+t248,[],"-P[-E ""\bif \({1}g|\bif \({1}""""out"" ../inputs/grep*.dat]"
+t249,[],"-P[-E ""if \({1}g\b|\bif \(({1}""""out)"" ../inputs/grep*.dat]"
+t250,[],"-P[-E ""\bif \({1}g|\bif out"" ../inputs/grep*.dat]"
+t251,[],"-P[-E ""\bif \(""""{1}gout"" ../inputs/grep*.dat]"
+t252,[],"-P[-E ""\bif \(({1}""""gout)"" ../inputs/grep*.dat]"
+t253,[],"-P[-E ""\bif \({1}gout\b"" ../inputs/grep*.dat]"
+t254,[],"-P[-E ""\bif a{1}g|if a""""{1}out\b"" ../inputs/grep*.dat]"
+t255,[],"-P[-E ""\bif a{1}g|\bif a{1}""""out"" ../inputs/grep*.dat]"
+t256,[],"-P[-E ""\bif a{1}g|\bif a({1}""""out)"" ../inputs/grep*.dat]"
+t257,[],"-P[-E ""if a{1}g\b|\bif out"" ../inputs/grep*.dat]"
+t258,[],"-P[-E ""\bif a""""{1}gout"" ../inputs/grep*.dat]"
+t259,[],"-P[-E ""\bif a({1}""""gout)"" ../inputs/grep*.dat]"
+t260,[],"-P[-E ""if a{1}gout\b"" ../inputs/grep*.dat]"
+t261,[],-P[-Ec static ../inputs/grep*.dat]
+t262,[],-P[-F 'if (out)'  ../inputs/grep*.dat]
+t263,[],"-P[-F ""if (gout)""  ../inputs/grep*.dat]"
+t264,[],-P[-F agout ../inputs/grep*.dat]
+t265,[],-P[-G 'dfaanalyze\|ab''[lo\]' ../inputs/grep*.dat]
+t266,[],-P[-G '\(dfaanalyze\|ab\)''[lo\]' ../inputs/grep*.dat]
+t268,[],-P['[ab\]''le' ../inputs/grep*.dat]
+t269,[],-P[-G '[12\]' ../inputs/grep*.dat]
+t273,[],-P[-G '[^[:alnum:\]\]''include' ../inputs/grep*.dat]
+t275,[],-P[-G 'In.lude\|?''\?%' ../inputs/grep*.dat]
+t276,[],-P[-G 'in.lude\|?\?''%' ../inputs/grep*.dat]
+t277,[],-P[-G '\(in.lude\|?\?\)''%' ../inputs/grep*.dat]
+t278,[],-P[-Gc 'In.lude\|?\?' ../inputs/grep*.dat]
+t279,[],-P[-G '?''\?.:' ../inputs/grep*.dat]
+t280,[],-P[-G '\*\?p.eg' ../inputs/grep*.dat]
+t281,[],-P[-G 'Include\|n''\?.lud' ../inputs/grep*.dat]
+t282,[],-P[-G 'main\|n\?''.lud' ../inputs/grep*.dat]
+t283,[],-P[-G '\(main\|n\?\)''.lud' ../inputs/grep*.dat]
+t284,[],-P['Include\|n\?.lude' ../inputs/grep*.dat]
+t285,[],-P[-G 'n''\?.lude' ../inputs/grep*.dat]
+t286,[],-P[-G 'n\?.lud' ../inputs/grep*.dat]
+t287,[],-P[-G 'In.lude\|?''\+%' ../inputs/grep*.dat]
+t288,[],-P[-G 'in.lude\|?\+''%' ../inputs/grep*.dat]
+t289,[],-P[-G '\(in.lude\|?\+\)''%' ../inputs/grep*.dat]
+t290,[],-P[-Gc 'In.lude\|?\+' ../inputs/grep*.dat]
+t291,[],-P[-G '?''\+.:' ../inputs/grep*.dat]
+t292,[],-P['\*\+p.eg' ../inputs/grep*.dat]
+t293,[],-P[-G 'Include\|n''\+.lud' ../inputs/grep*.dat]
+t294,[],-P[-G 'Include\|n\+''.lud' ../inputs/grep*.dat]
+t295,[],-P[-G '\(Include\|n\+\)''.lud' ../inputs/grep*.dat]
+t296,[],-P[-G 'Include\|n\+.lude' ../inputs/grep*.dat]
+t297,[],-P['n''\+.lude' ../inputs/grep*.dat]
+t298,[],-P['n\+.lud' ../inputs/grep*.dat]
+t299,[],-P[-G 'In.lude\|?''\{1\}%' ../inputs/grep*.dat]
+t300,[],-P[-G 'in.lude\|?\{1\}''%' ../inputs/grep*.dat]
+t301,[],-P[-G '\(in.lude\|?\{1\}\)''%' ../inputs/grep*.dat]
+t302,[],-P[-c 'In.lude\|?\{1\}' ../inputs/grep*.dat]
+t303,[],-P[-G '?''\{1\}.:' ../inputs/grep*.dat]
+t304,[],-P[-G '\*\{1\}p.eg' ../inputs/grep*.dat]
+t305,[],-P[-G 'Include\|n''\{1\}.lud' ../inputs/grep*.dat]
+t306,[],-P['Include\|n\{1\}''.lud' ../inputs/grep*.dat]
+t307,[],-P['\(Include\|n\{1\}\)''.lud' ../inputs/grep*.dat]
+t308,[],-P[-G 'Include\|n\{1\}.lude' ../inputs/grep*.dat]
+t309,[],-P['n''\{1\}.lude' ../inputs/grep*.dat]
+t310,[],-P[-G 'n\{1\}.lud' ../inputs/grep*.dat]
+t311,[],-P['In.lude\|?''%' ../inputs/grep*.dat]
+t312,[],-P['\(In.lude\|?\)''%' ../inputs/grep*.dat]
+t313,[],-P[-Gc 'In.lude\|?' ../inputs/grep*.dat]
+t314,[],-P['\*\*''p.' ../inputs/grep*.dat]
+t315,[],-P[-G '\*p.eg' ../inputs/grep*.dat]
+t316,[],-P[-G 'Include\|?''\?%' ../inputs/grep*.dat]
+t317,[],-P[-G 'include\|?\?''%' ../inputs/grep*.dat]
+t318,[],-P[-G '\(include\|?\?\)''%' ../inputs/grep*.dat]
+t319,[],-P[-Gc 'Include\|?\?' ../inputs/grep*.dat]
+t320,[],-P[-G '?''\? :' ../inputs/grep*.dat]
+t321,[],-P[-G '\*\?preg' ../inputs/grep*.dat]
+t322,[],-P[-G 'Include\|n''\?clud' ../inputs/grep*.dat]
+t323,[],-P['main\|in\?''clude' ../inputs/grep*.dat]
+t324,[],-P['\(main\|in\?\)''clude' ../inputs/grep*.dat]
+t325,[],-P[-G 'main\|n\?clude' ../inputs/grep*.dat]
+t326,[],-P[-G 'n''\?clude' ../inputs/grep*.dat]
+t327,[],-P[-G 'n\?clud' ../inputs/grep*.dat]
+t328,[],-P[-G 'Include\|?''\+%' ../inputs/grep*.dat]
+t329,[],-P[-G 'include\|?\+''%' ../inputs/grep*.dat]
+t330,[],-P[-G '\(include\|?\+\)''%' ../inputs/grep*.dat]
+t331,[],-P[-Gc 'Include\|?\+' ../inputs/grep*.dat]
+t332,[],-P[-G '?''\+ 0' ../inputs/grep*.dat]
+t333,[],-P[-G '\*\+preg' ../inputs/grep*.dat]
+t334,[],-P[-G 'main\|n''\+clud' ../inputs/grep*.dat]
+t335,[],-P[-G 'Include\|n\+''clud' ../inputs/grep*.dat]
+t336,[],-P[-G '\(Include\|n\+\)''clud' ../inputs/grep*.dat]
+t337,[],-P[-G 'Include\|n\+clude' ../inputs/grep*.dat]
+t338,[],-P[-G 'n''\+clude' ../inputs/grep*.dat]
+t339,[],-P[-G 'n\+clud' ../inputs/grep*.dat]
+t340,[],-P[-G 'Include\|?''\{1\}%' ../inputs/grep*.dat]
+t341,[],-P[-G 'include\|?\{1\}''%' ../inputs/grep*.dat]
+t342,[],-P[-G '\(include\|?\{1\}\)''%' ../inputs/grep*.dat]
+t343,[],-P[-Gc 'Include\|?\{1\}' ../inputs/grep*.dat]
+t344,[],-P[-G '?''\{1\} 0' ../inputs/grep*.dat]
+t345,[],-P['\*\{1\}preg' ../inputs/grep*.dat]
+t346,[],-P['Include\|n''\{1\}clud' ../inputs/grep*.dat]
+t347,[],-P[-G 'main\|n\{1\}''clud' ../inputs/grep*.dat]
+t348,[],-P[-G '\(main\|n\{1\}\)''clud' ../inputs/grep*.dat]
+t349,[],-P[-G 'Include\|n\{1\}clude' ../inputs/grep*.dat]
+t350,[],-P[-G 'n''\{1\}clude' ../inputs/grep*.dat]
+t351,[],-P['n\{1\}clud' ../inputs/grep*.dat]
+t352,[],-P[-G 'Include\|?''%' ../inputs/grep*.dat]
+t353,[],-P[-G '\(Include\|?\)''%' ../inputs/grep*.dat]
+t354,[],-P[-Gc 'Include\|?' ../inputs/grep*.dat]
+t355,[],-P[-G 'static'' int' ../inputs/grep*.dat]
+t356,[],-P['\*preg' ../inputs/grep*.dat]
+t357,[],"-P[-G ""[\]X\]\|end"""" -"" ../inputs/grep*.dat]"
+t358,[],"-P[-G ""\([\]X\]\|end\)"""" -"" ../inputs/grep*.dat]"
+t359,[],"-P[-G ""[\]X\]\|end"" ../inputs/grep*.dat]"
+t360,[],"-P[""[\]X\]"""" -"" ../inputs/grep*.dat]"
+t361,[],"-P[-G ""[\]X\]"" ../inputs/grep*.dat]"
+t362,[],"-P[-G ""^if (\?g\|if (""""\?out"" ../inputs/grep*.dat]"
+t363,[],"-P[-G ""^if (\?g\|^if (\?""""out"" ../inputs/grep*.dat]"
+t364,[],"-P[-G ""\(^if (\?g\|^if (\?\)""""out"" ../inputs/grep*.dat]"
+t365,[],"-P[-G ""^if (\?g\|^if out"" ../inputs/grep*.dat]"
+t366,[],"-P[-G ""^if (""""\?gout"" ../inputs/grep*.dat]"
+t367,[],"-P[""^if (\?gout"" ../inputs/grep*.dat]"
+t368,[],"-P[-G ""^if a\?g\|if a""""\?out"" ../inputs/grep*.dat]"
+t369,[],"-P[-G ""^if a\?g\|^if a\?""""out"" ../inputs/grep*.dat]"
+t370,[],"-P[-G ""\(^if a\?g\|^if a\?\)""""out"" ../inputs/grep*.dat]"
+t371,[],"-P[-G ""^if a\?g\|^if out"" ../inputs/grep*.dat]"
+t372,[],"-P[-G ""^if a""""\?gout"" ../inputs/grep*.dat]"
+t373,[],"-P[-G ""^if a\?gout"" ../inputs/grep*.dat]"
+t374,[],"-P[-G ""^if (\+g\|if (""""\+out"" ../inputs/grep*.dat]"
+t375,[],"-P[-G ""^if (\+g\|^if (\+""""out"" ../inputs/grep*.dat]"
+t376,[],"-P[-G ""\(^if (\+g\|^if (\+\)""""out"" ../inputs/grep*.dat]"
+t377,[],"-P[-G ""^if (\+g\|^if out"" ../inputs/grep*.dat]"
+t378,[],"-P[-G ""^if (""""\+gout"" ../inputs/grep*.dat]"
+t379,[],"-P[-G ""^if (\+gout"" ../inputs/grep*.dat]"
+t380,[],"-P[-G ""^if a\+g\|if a""""\+out"" ../inputs/grep*.dat]"
+t381,[],"-P[-G ""^if a\+g\|^if a\+""""out"" ../inputs/grep*.dat]"
+t382,[],"-P[-G ""\(^if a\+g\|^if a\+\)""""out"" ../inputs/grep*.dat]"
+t383,[],"-P[""^if a\+g\|^if out"" ../inputs/grep*.dat]"
+t384,[],"-P[-G ""^if a""""\+gout"" ../inputs/grep*.dat]"
+t385,[],"-P[-G ""^if a\+gout"" ../inputs/grep*.dat]"
+t386,[],"-P[-G ""^if (\{1\}g\|if (""""\{1\}out"" ../inputs/grep*.dat]"
+t387,[],"-P[-G ""^if (\{1\}g\|^if (\{1\}""""out"" ../inputs/grep*.dat]"
+t388,[],"-P[-G ""\(^if (\{1\}g\|^if (\{1\}\)""""out"" ../inputs/grep*.dat]"
+t389,[],"-P[-G ""^if (\{1\}g\|^if out"" ../inputs/grep*.dat]"
+t390,[],"-P[-G ""^if (""""\{1\}gout"" ../inputs/grep*.dat]"
+t391,[],"-P[-G ""^if (\{1\}gout"" ../inputs/grep*.dat]"
+t392,[],"-P[-G ""^if a\{1\}g\|if a""""\{1\}out"" ../inputs/grep*.dat]"
+t393,[],"-P[""^if a\{1\}g\|^if a\{1\}""""out"" ../inputs/grep*.dat]"
+t394,[],"-P[""\(^if a\{1\}g\|^if a\{1\}\)""""out"" ../inputs/grep*.dat]"
+t395,[],"-P[-G ""^if a\{1\}g\|^if out"" ../inputs/grep*.dat]"
+t396,[],"-P[""^if a""""\{1\}gout"" ../inputs/grep*.dat]"
+t397,[],"-P[""^if a\{1\}gout"" ../inputs/grep*.dat]"
+t398,[],"-P[-G ""\<if (\?g\|if (""""\?out"" ../inputs/grep*.dat]"
+t399,[],"-P[-G ""\<if (\?g\|\<if (\?""""out"" ../inputs/grep*.dat]"
+t400,[],"-P[-G ""\(\<if (\?g\|\<if (\?\)""""out"" ../inputs/grep*.dat]"
+t401,[],"-P[-G ""\<if (\?g\|\<if out"" ../inputs/grep*.dat]"
+t402,[],"-P[-G ""\<if (""""\?gout"" ../inputs/grep*.dat]"
+t403,[],"-P[-G ""\<if (\?gout"" ../inputs/grep*.dat]"
+t404,[],"-P[""\<if a\?g\|if a""""\?out"" ../inputs/grep*.dat]"
+t405,[],"-P[-G ""\<if a\?g\|\<if a\?""""out"" ../inputs/grep*.dat]"
+t406,[],"-P[-G ""\(\<if a\?g\|\<if a\?\)""""out"" ../inputs/grep*.dat]"
+t407,[],"-P[-G ""\<if a\?g\|\<if out"" ../inputs/grep*.dat]"
+t408,[],"-P[""\<if a""""\?gout"" ../inputs/grep*.dat]"
+t409,[],"-P[-G ""\<if a\?gout"" ../inputs/grep*.dat]"
+t410,[],"-P[-G ""\<if (\+g\|if (""""\+out"" ../inputs/grep*.dat]"
+t411,[],"-P[-G ""\<if (\+g\|\<if (\+""""out"" ../inputs/grep*.dat]"
+t412,[],"-P[-G ""\(\<if (\+g\|\<if (\+\)""""out"" ../inputs/grep*.dat]"
+t413,[],"-P[-G ""\<if (\+g\|\<if out"" ../inputs/grep*.dat]"
+t414,[],"-P[-G ""\<if (""""\+gout"" ../inputs/grep*.dat]"
+t415,[],"-P[-G ""\<if (\+gout"" ../inputs/grep*.dat]"
+t416,[],"-P[-G ""\<if a\+g\|if a""""\+out"" ../inputs/grep*.dat]"
+t417,[],"-P[-G ""\<if a\+g\|\<if a\+""""out"" ../inputs/grep*.dat]"
+t418,[],"-P[-G ""\(\<if a\+g\|\<if a\+\)""""out"" ../inputs/grep*.dat]"
+t419,[],"-P[-G ""\<if a\+g\|\<if out"" ../inputs/grep*.dat]"
+t420,[],"-P[""\<if a""""\+gout"" ../inputs/grep*.dat]"
+t421,[],"-P[-G ""\<if a\+gout"" ../inputs/grep*.dat]"
+t422,[],"-P[-G ""\<if (\{1\}g\|if (""""\{1\}out"" ../inputs/grep*.dat]"
+t423,[],"-P[-G ""\<if (\{1\}g\|\<if (\{1\}""""out"" ../inputs/grep*.dat]"
+t424,[],"-P[-G ""\(\<if (\{1\}g\|\<if (\{1\}\)""""out"" ../inputs/grep*.dat]"
+t425,[],"-P[-G ""\<if (\{1\}g\|\<if out"" ../inputs/grep*.dat]"
+t426,[],"-P[""\<if (""""\{1\}gout"" ../inputs/grep*.dat]"
+t427,[],"-P[-G ""\<if (\{1\}gout"" ../inputs/grep*.dat]"
+t428,[],"-P[-G ""\<if a\{1\}g\|if a""""\{1\}out"" ../inputs/grep*.dat]"
+t429,[],"-P[-G ""\<if a\{1\}g\|\<if a\{1\}""""out"" ../inputs/grep*.dat]"
+t430,[],"-P[-G ""\(\<if a\{1\}g\|\<if a\{1\}\)""""out"" ../inputs/grep*.dat]"
+t431,[],"-P[-G ""\<if a\{1\}g\|\<if out"" ../inputs/grep*.dat]"
+t432,[],"-P[-G ""\<if a""""\{1\}gout"" ../inputs/grep*.dat]"
+t433,[],"-P[-G ""\<if a\{1\}gout"" ../inputs/grep*.dat]"
+t435,[],"-P[-G ""\bif (\?g\|\bif (\?""""out"" ../inputs/grep*.dat]"
+t436,[],"-P[-G ""\(\bif (\?g\|\bif (\?\)""""out"" ../inputs/grep*.dat]"
+t437,[],"-P[""\bif (\?g\b\|\bif out"" ../inputs/grep*.dat]"
+t438,[],"-P[-G ""\bif (""""\?gout"" ../inputs/grep*.dat]"
+t439,[],"-P[-G ""\bif (\?gout\b"" ../inputs/grep*.dat]"
+t440,[],"-P[-G ""\bif a\?g\|if a""""\?out"" ../inputs/grep*.dat]"
+t441,[],"-P[""\bif a\?g\|\bif a\?""""out"" ../inputs/grep*.dat]"
+t442,[],"-P[""\(\bif a\?g\|\bif a\?\)""""out"" ../inputs/grep*.dat]"
+t443,[],"-P[-G ""\bif a\?g\|\bif out\b"" ../inputs/grep*.dat]"
+t444,[],"-P[-G ""\bif a""""\?gout\b"" ../inputs/grep*.dat]"
+t445,[],"-P[-G ""\bif a\?gout"" ../inputs/grep*.dat]"
+t446,[],"-P[-G ""\bif (\+g\b\|if (""""\+out"" ../inputs/grep*.dat]"
+t447,[],"-P[""\bif (\+g\|\bif (\+""""out"" ../inputs/grep*.dat]"
+t448,[],"-P[""\(\bif (\+g\|\bif (\+\)""""out"" ../inputs/grep*.dat]"
+t449,[],"-P[-G ""\bif (\+g\|\bif out"" ../inputs/grep*.dat]"
+t450,[],"-P[-G ""\bif (""""\+gout\b"" ../inputs/grep*.dat]"
+t451,[],"-P[-G ""\bif (\+gout"" ../inputs/grep*.dat]"
+t452,[],"-P[-G ""\bif a\+g\b\|if a""""\+out"" ../inputs/grep*.dat]"
+t453,[],"-P[-G ""if a\+g\b\|\bif a\+""""out"" ../inputs/grep*.dat]"
+t454,[],"-P[-G ""\(if a\+g\b\|\bif a\+\)""""out"" ../inputs/grep*.dat]"
+t455,[],"-P[-G ""\bif a\+g\|\bif out"" ../inputs/grep*.dat]"
+t456,[],"-P[-G ""if a""""\+gout\b"" ../inputs/grep*.dat]"
+t457,[],"-P[""if a\+gout\b"" ../inputs/grep*.dat]"
+t459,[],"-P[-G ""\bif (\{1\}g\|\bif (\{1\}""""out"" ../inputs/grep*.dat]"
+t460,[],"-P[-G ""\(\bif (\{1\}g\|\bif (\{1\}\)""""out"" ../inputs/grep*.dat]"
+t461,[],"-P[-G ""\bif (\{1\}g\|\bif out"" ../inputs/grep*.dat]"
+t462,[],"-P[""\bif (""""\{1\}gout"" ../inputs/grep*.dat]"
+t463,[],"-P[""\bif (\{1\}gout\b"" ../inputs/grep*.dat]"
+t464,[],"-P[-G ""\bif a\{1\}g\|if a""""\{1\}out\b"" ../inputs/grep*.dat]"
+t465,[],"-P[-G ""\bif a\{1\}g\|\bif a\{1\}""""out"" ../inputs/grep*.dat]"
+t466,[],"-P[-G ""\(\bif a\{1\}g\|\bif a\{1\}\)""""out"" ../inputs/grep*.dat]"
+t467,[],"-P[-G ""if a\{1\}g\b\|\bif out"" ../inputs/grep*.dat]"
+t468,[],"-P[-G ""\bif a""""\{1\}gout"" ../inputs/grep*.dat]"
+t469,[],"-P[-G ""if a\{1\}gout\b"" ../inputs/grep*.dat]"
+t470,[],-P[-Gc static ../inputs/grep*.dat]
+t471,[],-P[-n I ../inputs/grep1.dat]
+t472,[],"-P[-n ""/* The following list maps the names of the Posix named character classes   static int laststart;True if we're separated from beginning or (, |"" ../inputs/grep1.dat]"
+t473,[],"-P[-c ""/n"" ../inputs/grep1.dat]"
+t474,[],-P[-b 'static int' ../inputs/grep1.dat]
+t475,[],-P['if (! lexleft)' ../inputs/grep1.dat]
+t476,[],"-P[-G ' "":xdigit:\]"", is_xdigit' ../inputs/grep1.dat]"
+t477,[],"-P[""case ')':"" ../inputs/grep1.dat]"
+t478,[],"-P[""< PEND'"" ../inputs/grep1.dat]"
+t479,[],"-P[-G ' "":xdigit:\]' ../inputs/grep1.dat]"
+t480,[],-P[../inputs/grep0.dat ../inputs/grep1.dat]
+t481,[],-P[-w in ../inputs/grep1.dat]
+t482,[],"-P[-x ""  return"" ../inputs/grep1.dat]"
+t484,[],-P[-B 2 return ../inputs/grep1.dat]
+t485,[],-P[-A 2 return ../inputs/grep1.dat]
+t486,[],-P[-B 2 -A 3 return ../inputs/grep1.dat]
+t487,[],-P[-C return ../inputs/grep1.dat]
+t488,[],-P[-3 return ../inputs/grep1.dat]
+t489,[],-P[-q include ../inputs/grep1.dat]
+t490,[],-P[-c include] -I[grep1.dat]
+t491,[],-P[-c include -] -I[grep1.dat]
+t492,[],-P[-s 'return' ../inputs/grepNon.dat]
+t493,[],-P[-c TGGG ../inputs/grep1.dat]
+t494,[],-P['When group 3 ends' ../inputs/grep1.dat]
+t495,[],-P[size ../inputs/grep1.dat]
+t497,[],"-P[-L """" ../inputs/grep1.dat]"
+t498,[],"-P[-L """" ../inputs/grep*.dat]"
+t500,[],"-P[-c """" ../inputs/grep1.dat]"
+t501,[],"-P[-c """" ../inputs/grep*.dat]"
+t505,[],-P[-ile --beg ../inputs/grep1.dat]
+t506,[],-P[-ile --beg ../inputs/grep*.dat]
+t507,[],"-P[-ivL ""include"" ../inputs/grep1.dat]"
+t508,[],"-P[-ivL ""struct trie"" ../inputs/grep*.dat]"
+t509,[],"-P[-ivc ""include"" ../inputs/grep1.dat]"
+t510,[],"-P[-ivc ""include"" ../inputs/grep*.dat]"
+t511,[],"-P[-vL ""include"" ../inputs/grep1.dat]"
+t512,[],"-P[-vL ""include"" ../inputs/grep*.dat]"
+t513,[],"-P[-vc ""include"" ../inputs/grep1.dat]"
+t514,[],"-P[-vc ""include"" ../inputs/grep*.dat]"
+t515,[],"-P[-iL ""include"" ../inputs/grep1.dat]"
+t516,[],"-P[-iL ""include"" ../inputs/grep*.dat]"
+t517,[],"-P[-ic ""include"" ../inputs/grep1.dat]"
+t518,[],"-P[-ic ""include"" ../inputs/grep*.dat]"
+t519,[],"-P[-L ""include"" ../inputs/grep1.dat]"
+t520,[],"-P[-L ""include"" ../inputs/grep*.dat]"
+t521,[],"-P[-c ""include"" ../inputs/grep1.dat]"
+t522,[],"-P[-c ""include"" ../inputs/grep*.dat]"
+t539,[],-P[-inbh 'include' ../inputs/grep1.dat]
+t540,[],-P[-inbh 'include' ../inputs/grep*.dat]
+t541,[],-P[-inb 'include' ../inputs/grep1.dat]
+t542,[],-P[-inb 'include' ../inputs/grep*.dat]
+t543,[],-P[-inh 'include' ../inputs/grep1.dat]
+t544,[],-P[-inh 'include' ../inputs/grep*.dat]
+t545,[],-P[-in 'include' ../inputs/grep1.dat]
+t546,[],-P[-in 'include' ../inputs/grep*.dat]
+t547,[],-P[-nbh 'include' ../inputs/grep1.dat]
+t548,[],-P[-nbh 'include' ../inputs/grep*.dat]
+t549,[],-P[-nb 'include' ../inputs/grep1.dat]
+t550,[],-P[-nb 'include' ../inputs/grep*.dat]
+t551,[],-P[-nh 'include' ../inputs/grep1.dat]
+t552,[],-P[-nh 'include' ../inputs/grep*.dat]
+t553,[],-P[-n 'include' ../inputs/grep1.dat]
+t554,[],-P[-n 'include' ../inputs/grep*.dat]
+t555,[],-P[-vil 'include' ../inputs/grep1.dat]
+t556,[],-P[-vil 'include' ../inputs/grep*.dat]
+t569,[],-P[-vl include ../inputs/grep1.dat]
+t570,[],-P[-vl include ../inputs/grep*.dat]
+t583,[],-P[-il include ../inputs/grep1.dat]
+t584,[],-P[-il include ../inputs/grep*.dat]
+t585,[],-P[-ibh Tgggg ../inputs/grepBinary]
+t586,[],-P[-ibh include ../inputs/grep1.dat]
+t587,[],-P[-ibh include ../inputs/grep*.dat]
+t588,[],-P[-ib Tgggg ../inputs/grepBinary]
+t589,[],-P[-ib include ../inputs/grep1.dat]
+t590,[],-P[-ib include ../inputs/grep*.dat]
+t591,[],-P[-ih Tgggg ../inputs/grepBinary]
+t592,[],-P[-ih include ../inputs/grep1.dat]
+t593,[],-P[-ih include ../inputs/grep*.dat]
+t594,[],-P[-i Tgggg ../inputs/grepBinary]
+t595,[],-P[-i include ../inputs/grep1.dat]
+t596,[],-P[-i include ../inputs/grep*.dat]
+t597,[],-P[-l include ../inputs/grep1.dat]
+t598,[],-P[-l include ../inputs/grep*.dat]
+t599,[],-P[-bh Tgggg ../inputs/grepBinary]
+t600,[],-P[-bh include ../inputs/grep1.dat]
+t601,[],-P[-bh include ../inputs/grep*.dat]
+t602,[],-P[-b Tgggg ../inputs/grepBinary]
+t603,[],-P[-b include ../inputs/grep1.dat]
+t604,[],-P[-b include ../inputs/grep*.dat]
+t605,[],-P[-h Tgggg ../inputs/grepBinary]
+t606,[],-P[-h include ../inputs/grep1.dat]
+t607,[],-P[-h include ../inputs/grep*.dat]
+t608,[],-P[Tgggg ../inputs/grepBinary]
+t609,[],-P[include ../inputs/grep1.dat]
+t610,[],-P[include ../inputs/grep*.dat]
+t611,[],-P [-0 12345 ../inputs/grep1.dat]
+t612,[],-P [-1 12345 ../inputs/grep1.dat]
+t613,[],-P [-2 12345 ../inputs/grep1.dat]
+t614,[],-P [-3 12345 ../inputs/grep1.dat]
+t615,[],-P [-4 12345 ../inputs/grep1.dat]
+t616,[],-P [-5 12345 ../inputs/grep1.dat]
+t617,[],-P [-6 12345 ../inputs/grep1.dat]
+t618,[],-P [-7 12345 ../inputs/grep1.dat]
+t619,[],-P [-8 12345 ../inputs/grep1.dat]
+t620,[],-P [-9 12345 ../inputs/grep1.dat]
+t622,[],-P [-i 12345 ../inputs/grep1.dat]
+t632,[],-P [-c 12345a] -I [grep1.dat]
+t633,[],-P [12345a] -I [grep1.dat]
+t634,[],-P [-c include] -I [grep1.dat]
+t635,[],-P [include] -I [grep1.dat]
+t636,[],-P [include ../inputs/grep1.dat]
+t637,[],-P [-l include] -I [../inputs/grep1.dat]
+t638,[],-P [-L 12345a] -I [../inputs/grep1.dat]
+t639,[],-P [12345a] -I [../inputs/grep1.dat]
+t640,[],"-P [""--"" 12345 ../inputs/grep1.dat]"
+t642,[],"-P [""[z-a\]"" ../inputs/grep1.dat]"
+t643,[],"-P [""[5-1\]"" ../inputs/grep1.dat]"
+t644,[],"-P [""[F-A\]"" ../inputs/grep1.dat]"
+t647,[],-P ['a$a' ../inputs/grep1.dat]
+t648,[],-P ['if$' ../inputs/grep1.dat]
+t649,[],-P ['switch$|else' ../inputs/grep1.dat]
+t650,[],"-P [""1\+\+"" ../inputs/grep1.dat]"
+t659,[],"-P [""[1-\]"" ../inputs/grep1.dat]"
+t665,[],"-P [""[1-2-9\]"" ../inputs/grep1.dat]"
+t690,[],-P ['if\`' ../inputs/grep1.dat]
+t691,[],-P ['\`else' ../inputs/grep1.dat]
+t694,[],"-P [""\'else"" ../inputs/grep1.dat]"
+t719,[],"-P [""[1-9\]\{1,2\}"" ../inputs/grep1.dat]"
+t720,[],"-P [""A\{1,2\}"" ../inputs/grep1.dat]"
+t734,[],-P [-7 else ../inputs/grep1.dat]
+t735,[],-P [-4 12345 ../inputs/grep1.dat]
+t737,[],"-P [""1[[:alnum:\]\]"" ../inputs/grep1.dat]"
+t747,[],"-P [""\^"" ../inputs/grep1.dat]"
+t748,[],"-P [""1\^"" ../inputs/grep1.dat]"
+t749,[],"-P [""a\^"" ../inputs/grep1.dat]"
+t752,[],"-P [""\(1\)^"" ../inputs/grep1.dat]"
+t753,[],-P ['\$' ../inputs/grep1.dat]
+t754,[],-P ['if\$' ../inputs/grep1.dat]
+t755,[],-P ['main\$' ../inputs/grep1.dat]
+t757,[],-P ['if$' ../inputs/grep1.dat]
+t758,[],-P ['main$' ../inputs/grep1.dat]
+t759,[],-P ['$if' ../inputs/grep1.dat]
+t760,[],-P ['if$if' ../inputs/grep1.dat]
+t761,[],-P ['if$else' ../inputs/grep1.dat]
+t762,[],"-P ["">"" ../inputs/grep1.dat]"
+t763,[],"-P [""1>"" ../inputs/grep1.dat]"
+t764,[],"-P [""1>a"" ../inputs/grep1.dat]"
+t765,[],"-P [""B"" ../inputs/grep1.dat]"
+t766,[],"-P [""ABCDE"" ../inputs/grep1.dat]"
+t768,[],"-P [""*"" ../inputs/grep1.dat]"
+t769,[],"-P [""*a"" ../inputs/grep1.dat]"
+t770,[],"-P [""*\(abcde\)"" ../inputs/grep1.dat]"
+t771,[],"-P [""\+"" ../inputs/grep1.dat]"
+t772,[],"-P [""1\+"" ../inputs/grep1.dat]"
+t774,[],"-P [""+"" ../inputs/grep1.dat]"
+t775,[],"-P [""+if"" ../inputs/grep1.dat]"
+t776,[],"-P [""+else"" ../inputs/grep1.dat]"
+t777,[],"-P [""{"" ../inputs/grep1.dat]"
+t778,[],"-P [""if{"" ../inputs/grep1.dat]"
+t779,[],"-P [""else{"" ../inputs/grep1.dat]"
+t780,[],"-P [""1\{10,11\}2"" ../inputs/grep1.dat]"
+t781,[],"-P [""a\{10,11\}b"" ../inputs/grep1.dat]"
+t782,[],"-P [""if\{10,11\}else"" ../inputs/grep1.dat]"
+t783,[],"-P [""\."" ../inputs/grep1.dat]"
+t784,[],"-P [""1\.a"" ../inputs/grep1.dat]"
+t785,[],"-P [""if\.else"" ../inputs/grep1.dat]"
+t786,[],"-P [""\["" ../inputs/grep1.dat]"
+t787,[],"-P [""if\["" ../inputs/grep1.dat]"
+t788,[],"-P [""if\[else"" ../inputs/grep1.dat]"
+t791,[],"-P [-i ""if[Xx5\]"" ../inputs/grep1.dat]"
+t792,[],-P [-X grep 12345 ../inputs/grep1.dat]
+t793,[],-P [-X grep abcde ../inputs/grep1.dat]
+t795,[],-P [-e 1 -e 2 ../inputs/grep1.dat]
+t807,[],"-P [""\(\a|b*\|c\?|d\+\)\{1\}"" ../inputs/grep1.dat]"
+t808,[],"-P [""\(\if|else*\|for\?|while\+\)\{1\}"" ../inputs/grep1.dat]"
+t809,[],"-P [""\(\do|12345*\|main\?|A\+\)\{1\}"" ../inputs/grep1.dat]"
