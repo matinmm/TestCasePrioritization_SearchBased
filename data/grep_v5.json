@@ -1,0 +1,4047 @@
+[
+ {
+   "Test Case": "t1",
+   "Fault": [],
+   "Command": "-P[-n I ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t2",
+   "Fault": [],
+   "Command": "-P[-n 1 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t3",
+   "Fault": [],
+   "Command": "-P[-E '\\?' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t4",
+   "Fault": [],
+   "Command": "-P[-G '\\?' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t5",
+   "Fault": [],
+   "Command": "-P[-G '?' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t6",
+   "Fault": [],
+   "Command": "-P[-F '?' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t7",
+   "Fault": [],
+   "Command": "-P[-F '/*#include' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t8",
+   "Fault": [],
+   "Command": "-P[-G '[1-5\\]' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t9",
+   "Fault": [],
+   "Command": "-P[-E -c '[^a-z\\]' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t10",
+   "Fault": [],
+   "Command": "-P[-G '[X^YZ\\]' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t11",
+   "Fault": [],
+   "Command": "-P[-E '[1-\\]' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t12",
+   "Fault": [1,2],
+   "Command": "-P[-G '\\w' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t13",
+   "Fault": [2],
+   "Command": "-P[-G '[[:alpha:\\]\\]' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t14",
+   "Fault": [],
+   "Command": "-P[-E \"[[:cntrl:\\]\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t15",
+   "Fault": [],
+   "Command": "-P[-E \"[[:digit:\\]\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t16",
+   "Fault": [2],
+   "Command": "-P[-E \"[[:graph:\\]\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t17",
+   "Fault": [2],
+   "Command": "-P[-G \"[[:lower:\\]\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t18",
+   "Fault": [2],
+   "Command": "-P[-G \"[[:print:\\]\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t19",
+   "Fault": [],
+   "Command": "-P[-G '[[:punct:\\]\\]' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t20",
+   "Fault": [2],
+   "Command": "-P[-G '[[:space:\\]\\]' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t21",
+   "Fault": [],
+   "Command": "-P[-G '[[:upper:\\]\\]' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t22",
+   "Fault": [2],
+   "Command": "-P[-E '[[:xdigit:\\]\\]' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t23",
+   "Fault": [2],
+   "Command": "-P[-E . ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t24",
+   "Fault": [],
+   "Command": "-P[-E 'b$' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t25",
+   "Fault": [],
+   "Command": "-P[-E 'b\\>' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t26",
+   "Fault": [],
+   "Command": "-P[-E 'b\\B' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t27",
+   "Fault": [2],
+   "Command": "-P[-E 'b*' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t28",
+   "Fault": [],
+   "Command": "-P[-E 'a{2,}' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t29",
+   "Fault": [3],
+   "Command": "-P[-E 'a{,3}' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t30",
+   "Fault": [2],
+   "Command": "-P[-E 'a{1,5}' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t31",
+   "Fault": [],
+   "Command": "-P[-E 'dfaanalyze|ab''[lo\\]' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t32",
+   "Fault": [2],
+   "Command": "-P[-E '[ab\\]|include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t33",
+   "Fault": [],
+   "Command": "-P[-E '[ab\\]''le' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t34",
+   "Fault": [],
+   "Command": "-P[-E '[12\\]' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t35",
+   "Fault": [4],
+   "Command": "-P[-E 'include|\\W''reg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t36",
+   "Fault": [2,5],
+   "Command": "-P[-E '[^[:alnum:\\]\\]|include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t37",
+   "Fault": [],
+   "Command": "-P[-E '[^[:alnum:\\]\\]''include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t38",
+   "Fault": [2,5],
+   "Command": "-P[-E '[^[:alnum:\\]\\]' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t39",
+   "Fault": [],
+   "Command": "-P[-E 'In.lude|\\?''?%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t40",
+   "Fault": [],
+   "Command": "-P[-E 'in.lude|\\??''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t41",
+   "Fault": [],
+   "Command": "-P[-E 'In.lude|\\?(?''%)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t42",
+   "Fault": [],
+   "Command": "-P[-Ec 'In.lude|\\??' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t43",
+   "Fault": [],
+   "Command": "-P[-E '\\?''?.:' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t44",
+   "Fault": [],
+   "Command": "-P[-E '\\*(?''p.)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t45",
+   "Fault": [],
+   "Command": "-P[-E '\\*?p.eg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t46",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n''?.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t47",
+   "Fault": [],
+   "Command": "-P[-E 'main|n?''.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t48",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n(?''.lud)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t49",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n?.lude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t50",
+   "Fault": [],
+   "Command": "-P[-E 'n''?.lude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t51",
+   "Fault": [],
+   "Command": "-P[-E 'n(?''.lud)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t52",
+   "Fault": [],
+   "Command": "-P[-E 'n?.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t53",
+   "Fault": [],
+   "Command": "-P[-E 'In.lude|\\?''+%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t54",
+   "Fault": [],
+   "Command": "-P[-E 'in.lude|\\?+''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t55",
+   "Fault": [],
+   "Command": "-P[-E 'In.lude|\\?(+''%)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t56",
+   "Fault": [],
+   "Command": "-P[-Ec 'In.lude|\\?+' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t57",
+   "Fault": [],
+   "Command": "-P[-E '\\?''+.:' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t58",
+   "Fault": [],
+   "Command": "-P[-E '\\*(+''p.)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t59",
+   "Fault": [],
+   "Command": "-P[-E '\\*+p.eg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t60",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n''+.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t61",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n+''.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t62",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n(+''.lud)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t63",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n+.lude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t64",
+   "Fault": [],
+   "Command": "-P[-E 'n''+.lude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t65",
+   "Fault": [],
+   "Command": "-P[-E 'n(+''.lud)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t66",
+   "Fault": [],
+   "Command": "-P[-E 'n+.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t67",
+   "Fault": [],
+   "Command": "-P[-E 'In.lude|\\?''{1}%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t68",
+   "Fault": [],
+   "Command": "-P[-E 'in.lude|\\?''{1}%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t69",
+   "Fault": [],
+   "Command": "-P[-E 'In.lude|\\?({1}''%)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t70",
+   "Fault": [],
+   "Command": "-P[-Ec 'In.lude|\\?{1}' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t71",
+   "Fault": [],
+   "Command": "-P[-E '\\?''{1}.:' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t72",
+   "Fault": [],
+   "Command": "-P[-E '\\*({1}''p.)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t73",
+   "Fault": [],
+   "Command": "-P[-E '\\*{1}p.eg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t74",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n''{1}.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t75",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n{1}''.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t76",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n({1}''.lud)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t77",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n{1}.lude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t78",
+   "Fault": [],
+   "Command": "-P[-E 'n''{1}.lude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t79",
+   "Fault": [],
+   "Command": "-P[-E 'n({1}''.lud)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t80",
+   "Fault": [],
+   "Command": "-P[-E 'n{1}.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t81",
+   "Fault": [],
+   "Command": "-P[-E 'In.lude|\\?''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t82",
+   "Fault": [],
+   "Command": "-P[-Ec 'In.lude|\\?' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t83",
+   "Fault": [],
+   "Command": "-P[-E '\\*\\*''p.' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t84",
+   "Fault": [],
+   "Command": "-P[-E '\\*p.eg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t85",
+   "Fault": [],
+   "Command": "-P[-E 'Include|\\?''?%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t86",
+   "Fault": [],
+   "Command": "-P[-E 'include|\\?''?%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t87",
+   "Fault": [],
+   "Command": "-P[-E 'Include|\\?(?''%)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t88",
+   "Fault": [],
+   "Command": "-P[-Ec 'Include|\\??' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t89",
+   "Fault": [],
+   "Command": "-P[-E '\\?''? :' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t90",
+   "Fault": [],
+   "Command": "-P[-E '\\*(?''p)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t91",
+   "Fault": [],
+   "Command": "-P[-E '\\*?preg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t92",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n''?clud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t93",
+   "Fault": [],
+   "Command": "-P[-E 'main|in?''clude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t94",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n(?''clud)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t95",
+   "Fault": [],
+   "Command": "-P[-E 'main|n?clude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t96",
+   "Fault": [],
+   "Command": "-P[-E 'n''?clude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t97",
+   "Fault": [],
+   "Command": "-P[-E 'n(?''clud)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t98",
+   "Fault": [],
+   "Command": "-P[-E 'n?clud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t99",
+   "Fault": [],
+   "Command": "-P[-E 'Include|\\?''+%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t100",
+   "Fault": [],
+   "Command": "-P[-E 'include|\\?''+%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t101",
+   "Fault": [],
+   "Command": "-P[-E 'Include|\\?(+''%)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t102",
+   "Fault": [],
+   "Command": "-P[-Ec 'Include|\\?+' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t103",
+   "Fault": [],
+   "Command": "-P[-E '\\?''+ 0' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t104",
+   "Fault": [],
+   "Command": "-P[-E '\\*(+''pattern)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t105",
+   "Fault": [],
+   "Command": "-P[-E '\\*+preg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t106",
+   "Fault": [],
+   "Command": "-P[-E 'main|n''+clud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t107",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n+''clud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t108",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n(+''clud)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t109",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n+clude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t110",
+   "Fault": [],
+   "Command": "-P[-E 'n''+clude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t111",
+   "Fault": [],
+   "Command": "-P[-E 'n(+''clud)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t112",
+   "Fault": [],
+   "Command": "-P[-E 'n+clud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t113",
+   "Fault": [],
+   "Command": "-P[-E 'Include|\\?''{1}%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t114",
+   "Fault": [],
+   "Command": "-P[-E 'include|\\?{1}''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t115",
+   "Fault": [],
+   "Command": "-P[-E 'Include|\\?({1}''%)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t116",
+   "Fault": [],
+   "Command": "-P[-Ec 'Include|\\?{1}' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t117",
+   "Fault": [],
+   "Command": "-P[-E '\\?''{1} 0' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t118",
+   "Fault": [],
+   "Command": "-P[-E '\\*({1}''pr)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t119",
+   "Fault": [],
+   "Command": "-P[-E '\\*{1}preg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t120",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n''{1}clud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t121",
+   "Fault": [],
+   "Command": "-P[-E 'main|n{1}''clud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t122",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n({1}''clud)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t123",
+   "Fault": [],
+   "Command": "-P[-E 'Include|n{1}clude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t124",
+   "Fault": [],
+   "Command": "-P[-E 'n''{1}clude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t125",
+   "Fault": [],
+   "Command": "-P[-E 'n({1}''clud)' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t126",
+   "Fault": [],
+   "Command": "-P[-E 'n{1}clud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t127",
+   "Fault": [],
+   "Command": "-P[-E 'Include|\\?''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t128",
+   "Fault": [],
+   "Command": "-P[-Ec 'Include|\\?' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t129",
+   "Fault": [],
+   "Command": "-P[-E 'static'' int' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t130",
+   "Fault": [],
+   "Command": "-P[-E '\\*preg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t131",
+   "Fault": [],
+   "Command": "-P[-E \"[\\]X\\]|end\"\" -\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t132",
+   "Fault": [],
+   "Command": "-P[-E \"[\\]X\\]|end\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t133",
+   "Fault": [],
+   "Command": "-P[-E \"[\\]X\\]\"\" -\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t134",
+   "Fault": [],
+   "Command": "-P[-E \"[\\]X\\]\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t135",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\(?g|if \\(\"\"?out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t136",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\(?g|^if \\(?\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t137",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\(?g|^if \\((?\"\"out)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t138",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\(?g|^if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t139",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\(\"\"?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t140",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\((?\"\"gout)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t141",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\(?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t142",
+   "Fault": [],
+   "Command": "-P[-E \"^if a?g|if a\"\"?out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t143",
+   "Fault": [],
+   "Command": "-P[-E \"^if a?g|^if a?\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t144",
+   "Fault": [],
+   "Command": "-P[-E \"^if a?g|^if a(?\"\"out)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t145",
+   "Fault": [],
+   "Command": "-P[-E \"^if a?g|^if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t146",
+   "Fault": [],
+   "Command": "-P[-E \"^if a\"\"?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t147",
+   "Fault": [],
+   "Command": "-P[-E \"^if a(?\"\"gout)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t148",
+   "Fault": [],
+   "Command": "-P[-E \"^if a?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t149",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\(+g|if \\(\"\"+out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t150",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\(+g|^if \\(+\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t151",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\(+g|^if \\((+\"\"out)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t152",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\(+g|^if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t153",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\(\"\"+gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t154",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\((+\"\"gout)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t155",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\(+gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t156",
+   "Fault": [],
+   "Command": "-P[-E \"^if a+g|if a\"\"+out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t157",
+   "Fault": [],
+   "Command": "-P[-E \"^if a+g|^if a+\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t158",
+   "Fault": [],
+   "Command": "-P[-E \"^if a+g|^if a(+\"\"out)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t159",
+   "Fault": [],
+   "Command": "-P[-E \"^if a+g|^if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t160",
+   "Fault": [],
+   "Command": "-P[-E \"^if a\"\"+gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t161",
+   "Fault": [],
+   "Command": "-P[-E \"^if a(+\"\"gout)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t162",
+   "Fault": [],
+   "Command": "-P[-E \"^if a+gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t163",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\({1}g|if \\(\"\"{1}out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t164",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\({1}g|^if \\({1}\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t165",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\({1}g|^if \\(({1}\"\"out)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t166",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\({1}g|^if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t167",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\(\"\"{1}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t168",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\(({1}\"\"gout)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t169",
+   "Fault": [],
+   "Command": "-P[-E \"^if \\({1}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t170",
+   "Fault": [],
+   "Command": "-P[-E \"^if a{1}g|if a\"\"{1}out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t171",
+   "Fault": [],
+   "Command": "-P[-E \"^if a{1}g|^if a{1}\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t172",
+   "Fault": [],
+   "Command": "-P[-E \"^if a{1}g|^if a({1}\"\"out)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t173",
+   "Fault": [],
+   "Command": "-P[-E \"^if a{1}g|^if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t174",
+   "Fault": [],
+   "Command": "-P[-E \"^if a\"\"{1}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t175",
+   "Fault": [],
+   "Command": "-P[-E \"^if a({1}\"\"gout)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t176",
+   "Fault": [],
+   "Command": "-P[-E \"^if a{1}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t177",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\(?g|if \\(\"\"?out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t178",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\(?g|\\<if \\(?\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t179",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\(?g|\\<if \\((?\"\"out)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t180",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\(?g|\\<if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t181",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\(\"\"?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t182",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\((?\"\"gout)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t183",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\(?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t184",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a?g|if a\"\"?out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t185",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a?g|\\<if a?\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t186",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a?g|\\<if a(?\"\"out)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t187",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a?g|\\<if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t188",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a\"\"?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t189",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a(?\"\"gout)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t190",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t191",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\(+g|if \\(\"\"+out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t192",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\(+g|\\<if \\(+\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t193",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\(+g|\\<if \\((+\"\"out)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t194",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\(+g|\\<if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t195",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\(\"\"+gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t196",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\((+\"\"gout)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t197",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\(+gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t198",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a+g|if a\"\"+out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t199",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a+g|\\<if a+\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t200",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a+g|\\<if a(+\"\"out)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t201",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a+g|\\<if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t202",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a\"\"+gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t203",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a(+\"\"gout)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t204",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a+gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t205",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\({1}g|if \\(\"\"{1}out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t206",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\({1}g|\\<if \\({1}\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t207",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\({1}g|\\<if \\(({1}\"\"out)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t208",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\({1}g|\\<if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t209",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\(\"\"{1}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t210",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\(({1}\"\"gout)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t211",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if \\({1}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t212",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a{1}g|if a\"\"{1}out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t213",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a{1}g|\\<if a{1}\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t214",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a{1}g|\\<if a({1}\"\"out)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t215",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a{1}g|\\<if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t216",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a\"\"{1}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t217",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a({1}\"\"gout)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t218",
+   "Fault": [],
+   "Command": "-P[-E \"\\<if a{1}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t219",
+   "Fault": [6],
+   "Command": "-P[-E \"\\bif \\(?g|if \\(\"\"?out\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t220",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif \\(?g|\\bif \\(?\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t221",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif \\(?g\\b|\\bif \\((?\"\"out)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t222",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif \\(?g\\b|\\bif out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t223",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif \\(\"\"?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t224",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif \\((?\"\"gout)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t225",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif \\(?gout\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t226",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif a?g|if a\"\"?out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t227",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif a?g|\\bif a?\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t228",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif a?g|\\bif a(?\"\"out)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t229",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif a?g|\\bif out\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t230",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif a\"\"?gout\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t231",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif a(?\"\"gout)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t232",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif a?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t233",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif \\(+g\\b|if \\(\"\"+out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t234",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif \\(+g|\\bif \\(+\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t235",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif \\(+g|\\bif \\((+\"\"out)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t236",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif \\(+g|\\bif out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t237",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif \\(\"\"+gout\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t238",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif \\((+\"\"gout)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t239",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif \\(+gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t240",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif a+g\\b|if a\"\"+out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t241",
+   "Fault": [],
+   "Command": "-P[-E \"if a+g\\b|\\bif a+\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t242",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif a+g|\\bif a(+\"\"out)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t243",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif a+g|\\bif out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t244",
+   "Fault": [],
+   "Command": "-P[-E \"if a\"\"+gout\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t245",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif a(+\"\"gout)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t246",
+   "Fault": [],
+   "Command": "-P[-E \"if a+gout\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t247",
+   "Fault": [6],
+   "Command": "-P[-E \"\\bif \\({1}g|if \\(\"\"{1}out\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t248",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif \\({1}g|\\bif \\({1}\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t249",
+   "Fault": [],
+   "Command": "-P[-E \"if \\({1}g\\b|\\bif \\(({1}\"\"out)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t250",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif \\({1}g|\\bif out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t251",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif \\(\"\"{1}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t252",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif \\(({1}\"\"gout)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t253",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif \\({1}gout\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t254",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif a{1}g|if a\"\"{1}out\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t255",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif a{1}g|\\bif a{1}\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t256",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif a{1}g|\\bif a({1}\"\"out)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t257",
+   "Fault": [],
+   "Command": "-P[-E \"if a{1}g\\b|\\bif out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t258",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif a\"\"{1}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t259",
+   "Fault": [],
+   "Command": "-P[-E \"\\bif a({1}\"\"gout)\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t260",
+   "Fault": [],
+   "Command": "-P[-E \"if a{1}gout\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t261",
+   "Fault": [],
+   "Command": "-P[-Ec static ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t262",
+   "Fault": [],
+   "Command": "-P[-F 'if (out)'  ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t263",
+   "Fault": [],
+   "Command": "-P[-F \"if (gout)\"  ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t264",
+   "Fault": [],
+   "Command": "-P[-F agout ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t265",
+   "Fault": [],
+   "Command": "-P[-G 'dfaanalyze\\|ab''[lo\\]' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t266",
+   "Fault": [],
+   "Command": "-P[-G '\\(dfaanalyze\\|ab\\)''[lo\\]' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t267",
+   "Fault": [2],
+   "Command": "-P[-G '[ab\\]\\|include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t268",
+   "Fault": [],
+   "Command": "-P['[ab\\]''le' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t269",
+   "Fault": [],
+   "Command": "-P[-G '[12\\]' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t270",
+   "Fault": [4],
+   "Command": "-P[-G 'include\\|\\W''reg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t271",
+   "Fault": [4],
+   "Command": "-P[-G '\\(include\\|\\W\\)''reg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t272",
+   "Fault": [2,5],
+   "Command": "-P['[^[:alnum:\\]\\]\\|include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t273",
+   "Fault": [],
+   "Command": "-P[-G '[^[:alnum:\\]\\]''include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t274",
+   "Fault": [2,5],
+   "Command": "-P[-G '[^[:alnum:\\]\\]' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t275",
+   "Fault": [],
+   "Command": "-P[-G 'In.lude\\|?''\\?%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t276",
+   "Fault": [],
+   "Command": "-P[-G 'in.lude\\|?\\?''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t277",
+   "Fault": [],
+   "Command": "-P[-G '\\(in.lude\\|?\\?\\)''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t278",
+   "Fault": [],
+   "Command": "-P[-Gc 'In.lude\\|?\\?' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t279",
+   "Fault": [],
+   "Command": "-P[-G '?''\\?.:' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t280",
+   "Fault": [],
+   "Command": "-P[-G '\\*\\?p.eg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t281",
+   "Fault": [],
+   "Command": "-P[-G 'Include\\|n''\\?.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t282",
+   "Fault": [],
+   "Command": "-P[-G 'main\\|n\\?''.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t283",
+   "Fault": [],
+   "Command": "-P[-G '\\(main\\|n\\?\\)''.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t284",
+   "Fault": [],
+   "Command": "-P['Include\\|n\\?.lude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t285",
+   "Fault": [],
+   "Command": "-P[-G 'n''\\?.lude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t286",
+   "Fault": [],
+   "Command": "-P[-G 'n\\?.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t287",
+   "Fault": [],
+   "Command": "-P[-G 'In.lude\\|?''\\+%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t288",
+   "Fault": [],
+   "Command": "-P[-G 'in.lude\\|?\\+''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t289",
+   "Fault": [],
+   "Command": "-P[-G '\\(in.lude\\|?\\+\\)''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t290",
+   "Fault": [],
+   "Command": "-P[-Gc 'In.lude\\|?\\+' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t291",
+   "Fault": [],
+   "Command": "-P[-G '?''\\+.:' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t292",
+   "Fault": [],
+   "Command": "-P['\\*\\+p.eg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t293",
+   "Fault": [],
+   "Command": "-P[-G 'Include\\|n''\\+.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t294",
+   "Fault": [],
+   "Command": "-P[-G 'Include\\|n\\+''.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t295",
+   "Fault": [],
+   "Command": "-P[-G '\\(Include\\|n\\+\\)''.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t296",
+   "Fault": [],
+   "Command": "-P[-G 'Include\\|n\\+.lude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t297",
+   "Fault": [],
+   "Command": "-P['n''\\+.lude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t298",
+   "Fault": [],
+   "Command": "-P['n\\+.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t299",
+   "Fault": [],
+   "Command": "-P[-G 'In.lude\\|?''\\{1\\}%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t300",
+   "Fault": [],
+   "Command": "-P[-G 'in.lude\\|?\\{1\\}''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t301",
+   "Fault": [],
+   "Command": "-P[-G '\\(in.lude\\|?\\{1\\}\\)''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t302",
+   "Fault": [],
+   "Command": "-P[-c 'In.lude\\|?\\{1\\}' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t303",
+   "Fault": [],
+   "Command": "-P[-G '?''\\{1\\}.:' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t304",
+   "Fault": [],
+   "Command": "-P[-G '\\*\\{1\\}p.eg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t305",
+   "Fault": [],
+   "Command": "-P[-G 'Include\\|n''\\{1\\}.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t306",
+   "Fault": [],
+   "Command": "-P['Include\\|n\\{1\\}''.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t307",
+   "Fault": [],
+   "Command": "-P['\\(Include\\|n\\{1\\}\\)''.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t308",
+   "Fault": [],
+   "Command": "-P[-G 'Include\\|n\\{1\\}.lude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t309",
+   "Fault": [],
+   "Command": "-P['n''\\{1\\}.lude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t310",
+   "Fault": [],
+   "Command": "-P[-G 'n\\{1\\}.lud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t311",
+   "Fault": [],
+   "Command": "-P['In.lude\\|?''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t312",
+   "Fault": [],
+   "Command": "-P['\\(In.lude\\|?\\)''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t313",
+   "Fault": [],
+   "Command": "-P[-Gc 'In.lude\\|?' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t314",
+   "Fault": [],
+   "Command": "-P['\\*\\*''p.' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t315",
+   "Fault": [],
+   "Command": "-P[-G '\\*p.eg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t316",
+   "Fault": [],
+   "Command": "-P[-G 'Include\\|?''\\?%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t317",
+   "Fault": [],
+   "Command": "-P[-G 'include\\|?\\?''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t318",
+   "Fault": [],
+   "Command": "-P[-G '\\(include\\|?\\?\\)''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t319",
+   "Fault": [],
+   "Command": "-P[-Gc 'Include\\|?\\?' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t320",
+   "Fault": [],
+   "Command": "-P[-G '?''\\? :' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t321",
+   "Fault": [],
+   "Command": "-P[-G '\\*\\?preg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t322",
+   "Fault": [],
+   "Command": "-P[-G 'Include\\|n''\\?clud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t323",
+   "Fault": [],
+   "Command": "-P['main\\|in\\?''clude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t324",
+   "Fault": [],
+   "Command": "-P['\\(main\\|in\\?\\)''clude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t325",
+   "Fault": [],
+   "Command": "-P[-G 'main\\|n\\?clude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t326",
+   "Fault": [],
+   "Command": "-P[-G 'n''\\?clude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t327",
+   "Fault": [],
+   "Command": "-P[-G 'n\\?clud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t328",
+   "Fault": [],
+   "Command": "-P[-G 'Include\\|?''\\+%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t329",
+   "Fault": [],
+   "Command": "-P[-G 'include\\|?\\+''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t330",
+   "Fault": [],
+   "Command": "-P[-G '\\(include\\|?\\+\\)''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t331",
+   "Fault": [],
+   "Command": "-P[-Gc 'Include\\|?\\+' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t332",
+   "Fault": [],
+   "Command": "-P[-G '?''\\+ 0' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t333",
+   "Fault": [],
+   "Command": "-P[-G '\\*\\+preg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t334",
+   "Fault": [],
+   "Command": "-P[-G 'main\\|n''\\+clud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t335",
+   "Fault": [],
+   "Command": "-P[-G 'Include\\|n\\+''clud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t336",
+   "Fault": [],
+   "Command": "-P[-G '\\(Include\\|n\\+\\)''clud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t337",
+   "Fault": [],
+   "Command": "-P[-G 'Include\\|n\\+clude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t338",
+   "Fault": [],
+   "Command": "-P[-G 'n''\\+clude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t339",
+   "Fault": [],
+   "Command": "-P[-G 'n\\+clud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t340",
+   "Fault": [],
+   "Command": "-P[-G 'Include\\|?''\\{1\\}%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t341",
+   "Fault": [],
+   "Command": "-P[-G 'include\\|?\\{1\\}''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t342",
+   "Fault": [],
+   "Command": "-P[-G '\\(include\\|?\\{1\\}\\)''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t343",
+   "Fault": [],
+   "Command": "-P[-Gc 'Include\\|?\\{1\\}' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t344",
+   "Fault": [],
+   "Command": "-P[-G '?''\\{1\\} 0' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t345",
+   "Fault": [],
+   "Command": "-P['\\*\\{1\\}preg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t346",
+   "Fault": [],
+   "Command": "-P['Include\\|n''\\{1\\}clud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t347",
+   "Fault": [],
+   "Command": "-P[-G 'main\\|n\\{1\\}''clud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t348",
+   "Fault": [],
+   "Command": "-P[-G '\\(main\\|n\\{1\\}\\)''clud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t349",
+   "Fault": [],
+   "Command": "-P[-G 'Include\\|n\\{1\\}clude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t350",
+   "Fault": [],
+   "Command": "-P[-G 'n''\\{1\\}clude' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t351",
+   "Fault": [],
+   "Command": "-P['n\\{1\\}clud' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t352",
+   "Fault": [],
+   "Command": "-P[-G 'Include\\|?''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t353",
+   "Fault": [],
+   "Command": "-P[-G '\\(Include\\|?\\)''%' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t354",
+   "Fault": [],
+   "Command": "-P[-Gc 'Include\\|?' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t355",
+   "Fault": [],
+   "Command": "-P[-G 'static'' int' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t356",
+   "Fault": [],
+   "Command": "-P['\\*preg' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t357",
+   "Fault": [],
+   "Command": "-P[-G \"[\\]X\\]\\|end\"\" -\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t358",
+   "Fault": [],
+   "Command": "-P[-G \"\\([\\]X\\]\\|end\\)\"\" -\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t359",
+   "Fault": [],
+   "Command": "-P[-G \"[\\]X\\]\\|end\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t360",
+   "Fault": [],
+   "Command": "-P[\"[\\]X\\]\"\" -\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t361",
+   "Fault": [],
+   "Command": "-P[-G \"[\\]X\\]\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t362",
+   "Fault": [],
+   "Command": "-P[-G \"^if (\\?g\\|if (\"\"\\?out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t363",
+   "Fault": [],
+   "Command": "-P[-G \"^if (\\?g\\|^if (\\?\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t364",
+   "Fault": [],
+   "Command": "-P[-G \"\\(^if (\\?g\\|^if (\\?\\)\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t365",
+   "Fault": [],
+   "Command": "-P[-G \"^if (\\?g\\|^if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t366",
+   "Fault": [],
+   "Command": "-P[-G \"^if (\"\"\\?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t367",
+   "Fault": [],
+   "Command": "-P[\"^if (\\?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t368",
+   "Fault": [],
+   "Command": "-P[-G \"^if a\\?g\\|if a\"\"\\?out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t369",
+   "Fault": [],
+   "Command": "-P[-G \"^if a\\?g\\|^if a\\?\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t370",
+   "Fault": [],
+   "Command": "-P[-G \"\\(^if a\\?g\\|^if a\\?\\)\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t371",
+   "Fault": [],
+   "Command": "-P[-G \"^if a\\?g\\|^if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t372",
+   "Fault": [],
+   "Command": "-P[-G \"^if a\"\"\\?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t373",
+   "Fault": [],
+   "Command": "-P[-G \"^if a\\?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t374",
+   "Fault": [],
+   "Command": "-P[-G \"^if (\\+g\\|if (\"\"\\+out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t375",
+   "Fault": [],
+   "Command": "-P[-G \"^if (\\+g\\|^if (\\+\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t376",
+   "Fault": [],
+   "Command": "-P[-G \"\\(^if (\\+g\\|^if (\\+\\)\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t377",
+   "Fault": [],
+   "Command": "-P[-G \"^if (\\+g\\|^if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t378",
+   "Fault": [],
+   "Command": "-P[-G \"^if (\"\"\\+gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t379",
+   "Fault": [],
+   "Command": "-P[-G \"^if (\\+gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t380",
+   "Fault": [],
+   "Command": "-P[-G \"^if a\\+g\\|if a\"\"\\+out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t381",
+   "Fault": [],
+   "Command": "-P[-G \"^if a\\+g\\|^if a\\+\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t382",
+   "Fault": [],
+   "Command": "-P[-G \"\\(^if a\\+g\\|^if a\\+\\)\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t383",
+   "Fault": [],
+   "Command": "-P[\"^if a\\+g\\|^if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t384",
+   "Fault": [],
+   "Command": "-P[-G \"^if a\"\"\\+gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t385",
+   "Fault": [],
+   "Command": "-P[-G \"^if a\\+gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t386",
+   "Fault": [],
+   "Command": "-P[-G \"^if (\\{1\\}g\\|if (\"\"\\{1\\}out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t387",
+   "Fault": [],
+   "Command": "-P[-G \"^if (\\{1\\}g\\|^if (\\{1\\}\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t388",
+   "Fault": [],
+   "Command": "-P[-G \"\\(^if (\\{1\\}g\\|^if (\\{1\\}\\)\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t389",
+   "Fault": [],
+   "Command": "-P[-G \"^if (\\{1\\}g\\|^if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t390",
+   "Fault": [],
+   "Command": "-P[-G \"^if (\"\"\\{1\\}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t391",
+   "Fault": [],
+   "Command": "-P[-G \"^if (\\{1\\}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t392",
+   "Fault": [],
+   "Command": "-P[-G \"^if a\\{1\\}g\\|if a\"\"\\{1\\}out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t393",
+   "Fault": [],
+   "Command": "-P[\"^if a\\{1\\}g\\|^if a\\{1\\}\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t394",
+   "Fault": [],
+   "Command": "-P[\"\\(^if a\\{1\\}g\\|^if a\\{1\\}\\)\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t395",
+   "Fault": [],
+   "Command": "-P[-G \"^if a\\{1\\}g\\|^if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t396",
+   "Fault": [],
+   "Command": "-P[\"^if a\"\"\\{1\\}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t397",
+   "Fault": [],
+   "Command": "-P[\"^if a\\{1\\}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t398",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if (\\?g\\|if (\"\"\\?out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t399",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if (\\?g\\|\\<if (\\?\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t400",
+   "Fault": [],
+   "Command": "-P[-G \"\\(\\<if (\\?g\\|\\<if (\\?\\)\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t401",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if (\\?g\\|\\<if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t402",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if (\"\"\\?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t403",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if (\\?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t404",
+   "Fault": [],
+   "Command": "-P[\"\\<if a\\?g\\|if a\"\"\\?out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t405",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if a\\?g\\|\\<if a\\?\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t406",
+   "Fault": [],
+   "Command": "-P[-G \"\\(\\<if a\\?g\\|\\<if a\\?\\)\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t407",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if a\\?g\\|\\<if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t408",
+   "Fault": [],
+   "Command": "-P[\"\\<if a\"\"\\?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t409",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if a\\?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t410",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if (\\+g\\|if (\"\"\\+out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t411",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if (\\+g\\|\\<if (\\+\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t412",
+   "Fault": [],
+   "Command": "-P[-G \"\\(\\<if (\\+g\\|\\<if (\\+\\)\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t413",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if (\\+g\\|\\<if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t414",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if (\"\"\\+gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t415",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if (\\+gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t416",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if a\\+g\\|if a\"\"\\+out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t417",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if a\\+g\\|\\<if a\\+\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t418",
+   "Fault": [],
+   "Command": "-P[-G \"\\(\\<if a\\+g\\|\\<if a\\+\\)\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t419",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if a\\+g\\|\\<if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t420",
+   "Fault": [],
+   "Command": "-P[\"\\<if a\"\"\\+gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t421",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if a\\+gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t422",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if (\\{1\\}g\\|if (\"\"\\{1\\}out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t423",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if (\\{1\\}g\\|\\<if (\\{1\\}\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t424",
+   "Fault": [],
+   "Command": "-P[-G \"\\(\\<if (\\{1\\}g\\|\\<if (\\{1\\}\\)\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t425",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if (\\{1\\}g\\|\\<if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t426",
+   "Fault": [],
+   "Command": "-P[\"\\<if (\"\"\\{1\\}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t427",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if (\\{1\\}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t428",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if a\\{1\\}g\\|if a\"\"\\{1\\}out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t429",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if a\\{1\\}g\\|\\<if a\\{1\\}\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t430",
+   "Fault": [],
+   "Command": "-P[-G \"\\(\\<if a\\{1\\}g\\|\\<if a\\{1\\}\\)\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t431",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if a\\{1\\}g\\|\\<if out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t432",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if a\"\"\\{1\\}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t433",
+   "Fault": [],
+   "Command": "-P[-G \"\\<if a\\{1\\}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t434",
+   "Fault": [6],
+   "Command": "-P[\"\\bif (\\?g\\|if (\"\"\\?out\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t435",
+   "Fault": [],
+   "Command": "-P[-G \"\\bif (\\?g\\|\\bif (\\?\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t436",
+   "Fault": [],
+   "Command": "-P[-G \"\\(\\bif (\\?g\\|\\bif (\\?\\)\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t437",
+   "Fault": [],
+   "Command": "-P[\"\\bif (\\?g\\b\\|\\bif out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t438",
+   "Fault": [],
+   "Command": "-P[-G \"\\bif (\"\"\\?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t439",
+   "Fault": [],
+   "Command": "-P[-G \"\\bif (\\?gout\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t440",
+   "Fault": [],
+   "Command": "-P[-G \"\\bif a\\?g\\|if a\"\"\\?out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t441",
+   "Fault": [],
+   "Command": "-P[\"\\bif a\\?g\\|\\bif a\\?\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t442",
+   "Fault": [],
+   "Command": "-P[\"\\(\\bif a\\?g\\|\\bif a\\?\\)\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t443",
+   "Fault": [],
+   "Command": "-P[-G \"\\bif a\\?g\\|\\bif out\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t444",
+   "Fault": [],
+   "Command": "-P[-G \"\\bif a\"\"\\?gout\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t445",
+   "Fault": [],
+   "Command": "-P[-G \"\\bif a\\?gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t446",
+   "Fault": [],
+   "Command": "-P[-G \"\\bif (\\+g\\b\\|if (\"\"\\+out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t447",
+   "Fault": [],
+   "Command": "-P[\"\\bif (\\+g\\|\\bif (\\+\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t448",
+   "Fault": [],
+   "Command": "-P[\"\\(\\bif (\\+g\\|\\bif (\\+\\)\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t449",
+   "Fault": [],
+   "Command": "-P[-G \"\\bif (\\+g\\|\\bif out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t450",
+   "Fault": [],
+   "Command": "-P[-G \"\\bif (\"\"\\+gout\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t451",
+   "Fault": [],
+   "Command": "-P[-G \"\\bif (\\+gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t452",
+   "Fault": [],
+   "Command": "-P[-G \"\\bif a\\+g\\b\\|if a\"\"\\+out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t453",
+   "Fault": [],
+   "Command": "-P[-G \"if a\\+g\\b\\|\\bif a\\+\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t454",
+   "Fault": [],
+   "Command": "-P[-G \"\\(if a\\+g\\b\\|\\bif a\\+\\)\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t455",
+   "Fault": [],
+   "Command": "-P[-G \"\\bif a\\+g\\|\\bif out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t456",
+   "Fault": [],
+   "Command": "-P[-G \"if a\"\"\\+gout\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t457",
+   "Fault": [],
+   "Command": "-P[\"if a\\+gout\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t458",
+   "Fault": [6],
+   "Command": "-P[-G \"\\bif (\\{1\\}g\\|if (\"\"\\{1\\}out\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t459",
+   "Fault": [],
+   "Command": "-P[-G \"\\bif (\\{1\\}g\\|\\bif (\\{1\\}\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t460",
+   "Fault": [],
+   "Command": "-P[-G \"\\(\\bif (\\{1\\}g\\|\\bif (\\{1\\}\\)\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t461",
+   "Fault": [],
+   "Command": "-P[-G \"\\bif (\\{1\\}g\\|\\bif out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t462",
+   "Fault": [],
+   "Command": "-P[\"\\bif (\"\"\\{1\\}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t463",
+   "Fault": [],
+   "Command": "-P[\"\\bif (\\{1\\}gout\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t464",
+   "Fault": [],
+   "Command": "-P[-G \"\\bif a\\{1\\}g\\|if a\"\"\\{1\\}out\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t465",
+   "Fault": [],
+   "Command": "-P[-G \"\\bif a\\{1\\}g\\|\\bif a\\{1\\}\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t466",
+   "Fault": [],
+   "Command": "-P[-G \"\\(\\bif a\\{1\\}g\\|\\bif a\\{1\\}\\)\"\"out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t467",
+   "Fault": [],
+   "Command": "-P[-G \"if a\\{1\\}g\\b\\|\\bif out\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t468",
+   "Fault": [],
+   "Command": "-P[-G \"\\bif a\"\"\\{1\\}gout\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t469",
+   "Fault": [],
+   "Command": "-P[-G \"if a\\{1\\}gout\\b\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t470",
+   "Fault": [],
+   "Command": "-P[-Gc static ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t471",
+   "Fault": [],
+   "Command": "-P[-n I ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t472",
+   "Fault": [],
+   "Command": "-P[-n \"/* The following list maps the names of the Posix named character classes   static int laststart;True if we're separated from beginning or (, |\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t473",
+   "Fault": [],
+   "Command": "-P[-c \"/n\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t474",
+   "Fault": [],
+   "Command": "-P[-b 'static int' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t475",
+   "Fault": [],
+   "Command": "-P['if (! lexleft)' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t476",
+   "Fault": [],
+   "Command": "-P[-G ' \":xdigit:\\]\", is_xdigit' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t477",
+   "Fault": [],
+   "Command": "-P[\"case ')':\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t478",
+   "Fault": [],
+   "Command": "-P[\"< PEND'\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t479",
+   "Fault": [],
+   "Command": "-P[-G ' \":xdigit:\\]' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t480",
+   "Fault": [],
+   "Command": "-P[../inputs/grep0.dat ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t481",
+   "Fault": [],
+   "Command": "-P[-w in ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t482",
+   "Fault": [],
+   "Command": "-P[-x \"  return\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t483",
+   "Fault": [7],
+   "Command": "-P[-V]"
+ },
+ {
+   "Test Case": "t484",
+   "Fault": [],
+   "Command": "-P[-B 2 return ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t485",
+   "Fault": [],
+   "Command": "-P[-A 2 return ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t486",
+   "Fault": [],
+   "Command": "-P[-B 2 -A 3 return ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t487",
+   "Fault": [],
+   "Command": "-P[-C return ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t488",
+   "Fault": [],
+   "Command": "-P[-3 return ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t489",
+   "Fault": [],
+   "Command": "-P[-q include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t490",
+   "Fault": [],
+   "Command": "-P[-c include] -I[grep1.dat]"
+ },
+ {
+   "Test Case": "t491",
+   "Fault": [],
+   "Command": "-P[-c include -] -I[grep1.dat]"
+ },
+ {
+   "Test Case": "t492",
+   "Fault": [],
+   "Command": "-P[-s 'return' ../inputs/grepNon.dat]"
+ },
+ {
+   "Test Case": "t493",
+   "Fault": [],
+   "Command": "-P[-c TGGG ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t494",
+   "Fault": [],
+   "Command": "-P['When group 3 ends' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t495",
+   "Fault": [],
+   "Command": "-P[size ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t496",
+   "Fault": [8],
+   "Command": "-P[-L \"\" ../inputs/grepNon.dat]"
+ },
+ {
+   "Test Case": "t497",
+   "Fault": [],
+   "Command": "-P[-L \"\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t498",
+   "Fault": [],
+   "Command": "-P[-L \"\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t499",
+   "Fault": [8],
+   "Command": "-P[-c \"\" ../inputs/grepNon.dat]"
+ },
+ {
+   "Test Case": "t500",
+   "Fault": [],
+   "Command": "-P[-c \"\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t501",
+   "Fault": [],
+   "Command": "-P[-c \"\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t502",
+   "Fault": [8],
+   "Command": "-P[-nbh '' ../inputs/grepNon.dat]"
+ },
+ {
+   "Test Case": "t503",
+   "Fault": [2],
+   "Command": "-P[-nbh '' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t504",
+   "Fault": [2,5],
+   "Command": "-P[-nbh '' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t505",
+   "Fault": [],
+   "Command": "-P[-ile --beg ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t506",
+   "Fault": [],
+   "Command": "-P[-ile --beg ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t507",
+   "Fault": [],
+   "Command": "-P[-ivL \"include\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t508",
+   "Fault": [],
+   "Command": "-P[-ivL \"struct trie\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t509",
+   "Fault": [],
+   "Command": "-P[-ivc \"include\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t510",
+   "Fault": [],
+   "Command": "-P[-ivc \"include\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t511",
+   "Fault": [],
+   "Command": "-P[-vL \"include\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t512",
+   "Fault": [],
+   "Command": "-P[-vL \"include\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t513",
+   "Fault": [],
+   "Command": "-P[-vc \"include\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t514",
+   "Fault": [],
+   "Command": "-P[-vc \"include\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t515",
+   "Fault": [],
+   "Command": "-P[-iL \"include\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t516",
+   "Fault": [],
+   "Command": "-P[-iL \"include\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t517",
+   "Fault": [],
+   "Command": "-P[-ic \"include\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t518",
+   "Fault": [],
+   "Command": "-P[-ic \"include\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t519",
+   "Fault": [],
+   "Command": "-P[-L \"include\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t520",
+   "Fault": [],
+   "Command": "-P[-L \"include\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t521",
+   "Fault": [],
+   "Command": "-P[-c \"include\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t522",
+   "Fault": [],
+   "Command": "-P[-c \"include\" ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t523",
+   "Fault": [2],
+   "Command": "-P[-vinbh 'include' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t524",
+   "Fault": [2,5],
+   "Command": "-P[-vinbh 'include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t525",
+   "Fault": [2],
+   "Command": "-P[-vinb 'include' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t526",
+   "Fault": [2,5],
+   "Command": "-P[-vinb 'include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t527",
+   "Fault": [2],
+   "Command": "-P[-vinh 'include' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t528",
+   "Fault": [2,5],
+   "Command": "-P[-vinh 'include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t529",
+   "Fault": [2],
+   "Command": "-P[-vin 'include' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t530",
+   "Fault": [2,5],
+   "Command": "-P[-vin 'include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t531",
+   "Fault": [2],
+   "Command": "-P[-vbhn 'include' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t532",
+   "Fault": [2,5],
+   "Command": "-P[-vbhn 'include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t533",
+   "Fault": [2],
+   "Command": "-P[-vbn 'include' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t534",
+   "Fault": [5],
+   "Command": "-P[-vbn 'include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t535",
+   "Fault": [2],
+   "Command": "-P[-vnh 'include' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t536",
+   "Fault": [2,5],
+   "Command": "-P[-vnh 'include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t537",
+   "Fault": [2],
+   "Command": "-P[-vn 'include' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t538",
+   "Fault": [2,5],
+   "Command": "-P[-vn 'include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t539",
+   "Fault": [],
+   "Command": "-P[-inbh 'include' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t540",
+   "Fault": [],
+   "Command": "-P[-inbh 'include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t541",
+   "Fault": [],
+   "Command": "-P[-inb 'include' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t542",
+   "Fault": [],
+   "Command": "-P[-inb 'include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t543",
+   "Fault": [],
+   "Command": "-P[-inh 'include' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t544",
+   "Fault": [],
+   "Command": "-P[-inh 'include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t545",
+   "Fault": [],
+   "Command": "-P[-in 'include' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t546",
+   "Fault": [],
+   "Command": "-P[-in 'include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t547",
+   "Fault": [],
+   "Command": "-P[-nbh 'include' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t548",
+   "Fault": [],
+   "Command": "-P[-nbh 'include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t549",
+   "Fault": [],
+   "Command": "-P[-nb 'include' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t550",
+   "Fault": [],
+   "Command": "-P[-nb 'include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t551",
+   "Fault": [],
+   "Command": "-P[-nh 'include' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t552",
+   "Fault": [],
+   "Command": "-P[-nh 'include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t553",
+   "Fault": [],
+   "Command": "-P[-n 'include' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t554",
+   "Fault": [],
+   "Command": "-P[-n 'include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t555",
+   "Fault": [],
+   "Command": "-P[-vil 'include' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t556",
+   "Fault": [],
+   "Command": "-P[-vil 'include' ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t557",
+   "Fault": [9],
+   "Command": "-P[-vibh TGGGG ../inputs/grepBinary]"
+ },
+ {
+   "Test Case": "t558",
+   "Fault": [2],
+   "Command": "-P[-vibh include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t559",
+   "Fault": [2,5],
+   "Command": "-P[-vibh include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t560",
+   "Fault": [9],
+   "Command": "-P[-vib TGGGG ../inputs/grepBinary]"
+ },
+ {
+   "Test Case": "t561",
+   "Fault": [2],
+   "Command": "-P[-vib include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t562",
+   "Fault": [2,5],
+   "Command": "-P[-vib include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t563",
+   "Fault": [9],
+   "Command": "-P[-vih TGGGG ../inputs/grepBinary]"
+ },
+ {
+   "Test Case": "t564",
+   "Fault": [2],
+   "Command": "-P[-vih include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t565",
+   "Fault": [2,5],
+   "Command": "-P[-vih include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t566",
+   "Fault": [9],
+   "Command": "-P[-vi TGGGG ../inputs/grepBinary]"
+ },
+ {
+   "Test Case": "t567",
+   "Fault": [2],
+   "Command": "-P[-vi include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t568",
+   "Fault": [2,5],
+   "Command": "-P[-vi include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t569",
+   "Fault": [],
+   "Command": "-P[-vl include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t570",
+   "Fault": [],
+   "Command": "-P[-vl include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t571",
+   "Fault": [9],
+   "Command": "-P[-vbh Tgggg ../inputs/grepBinary]"
+ },
+ {
+   "Test Case": "t572",
+   "Fault": [2],
+   "Command": "-P[-vbh include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t573",
+   "Fault": [2,5],
+   "Command": "-P[-vbh include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t574",
+   "Fault": [9],
+   "Command": "-P[-vb Tgggg ../inputs/grepBinary]"
+ },
+ {
+   "Test Case": "t575",
+   "Fault": [2],
+   "Command": "-P[-vb include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t576",
+   "Fault": [2,5],
+   "Command": "-P[-vb include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t577",
+   "Fault": [9],
+   "Command": "-P[-vh Tgggg ../inputs/grepBinary]"
+ },
+ {
+   "Test Case": "t578",
+   "Fault": [2],
+   "Command": "-P[-vh include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t579",
+   "Fault": [2,5],
+   "Command": "-P[-vh include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t580",
+   "Fault": [9],
+   "Command": "-P[-v Tgggg ../inputs/grepBinary]"
+ },
+ {
+   "Test Case": "t581",
+   "Fault": [2],
+   "Command": "-P[-v include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t582",
+   "Fault": [2,5],
+   "Command": "-P[-v include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t583",
+   "Fault": [],
+   "Command": "-P[-il include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t584",
+   "Fault": [],
+   "Command": "-P[-il include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t585",
+   "Fault": [],
+   "Command": "-P[-ibh Tgggg ../inputs/grepBinary]"
+ },
+ {
+   "Test Case": "t586",
+   "Fault": [],
+   "Command": "-P[-ibh include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t587",
+   "Fault": [],
+   "Command": "-P[-ibh include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t588",
+   "Fault": [],
+   "Command": "-P[-ib Tgggg ../inputs/grepBinary]"
+ },
+ {
+   "Test Case": "t589",
+   "Fault": [],
+   "Command": "-P[-ib include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t590",
+   "Fault": [],
+   "Command": "-P[-ib include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t591",
+   "Fault": [],
+   "Command": "-P[-ih Tgggg ../inputs/grepBinary]"
+ },
+ {
+   "Test Case": "t592",
+   "Fault": [],
+   "Command": "-P[-ih include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t593",
+   "Fault": [],
+   "Command": "-P[-ih include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t594",
+   "Fault": [],
+   "Command": "-P[-i Tgggg ../inputs/grepBinary]"
+ },
+ {
+   "Test Case": "t595",
+   "Fault": [],
+   "Command": "-P[-i include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t596",
+   "Fault": [],
+   "Command": "-P[-i include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t597",
+   "Fault": [],
+   "Command": "-P[-l include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t598",
+   "Fault": [],
+   "Command": "-P[-l include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t599",
+   "Fault": [],
+   "Command": "-P[-bh Tgggg ../inputs/grepBinary]"
+ },
+ {
+   "Test Case": "t600",
+   "Fault": [],
+   "Command": "-P[-bh include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t601",
+   "Fault": [],
+   "Command": "-P[-bh include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t602",
+   "Fault": [],
+   "Command": "-P[-b Tgggg ../inputs/grepBinary]"
+ },
+ {
+   "Test Case": "t603",
+   "Fault": [],
+   "Command": "-P[-b include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t604",
+   "Fault": [],
+   "Command": "-P[-b include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t605",
+   "Fault": [],
+   "Command": "-P[-h Tgggg ../inputs/grepBinary]"
+ },
+ {
+   "Test Case": "t606",
+   "Fault": [],
+   "Command": "-P[-h include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t607",
+   "Fault": [],
+   "Command": "-P[-h include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t608",
+   "Fault": [],
+   "Command": "-P[Tgggg ../inputs/grepBinary]"
+ },
+ {
+   "Test Case": "t609",
+   "Fault": [],
+   "Command": "-P[include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t610",
+   "Fault": [],
+   "Command": "-P[include ../inputs/grep*.dat]"
+ },
+ {
+   "Test Case": "t611",
+   "Fault": [],
+   "Command": "-P [-0 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t612",
+   "Fault": [],
+   "Command": "-P [-1 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t613",
+   "Fault": [],
+   "Command": "-P [-2 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t614",
+   "Fault": [],
+   "Command": "-P [-3 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t615",
+   "Fault": [],
+   "Command": "-P [-4 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t616",
+   "Fault": [],
+   "Command": "-P [-5 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t617",
+   "Fault": [],
+   "Command": "-P [-6 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t618",
+   "Fault": [],
+   "Command": "-P [-7 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t619",
+   "Fault": [],
+   "Command": "-P [-8 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t620",
+   "Fault": [],
+   "Command": "-P [-9 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t621",
+   "Fault": [8],
+   "Command": "-P [-f 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t622",
+   "Fault": [],
+   "Command": "-P [-i 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t623",
+   "Fault": [8],
+   "Command": "-P [-Y 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t624",
+   "Fault": [8],
+   "Command": "-P [-A -12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t625",
+   "Fault": [8],
+   "Command": "-P [-B -12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t626",
+   "Fault": [8],
+   "Command": "-P [-F -E 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t627",
+   "Fault": [8],
+   "Command": "-P [-E -F 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t628",
+   "Fault": [8],
+   "Command": "-P [-E -G 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t629",
+   "Fault": [8],
+   "Command": "-P [-G -X 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t630",
+   "Fault": [8],
+   "Command": "-P [-f nosuchfile ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t631",
+   "Fault": [8],
+   "Command": "-P [-f ../inputs/grep1.dat ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t632",
+   "Fault": [],
+   "Command": "-P [-c 12345a] -I [grep1.dat]"
+ },
+ {
+   "Test Case": "t633",
+   "Fault": [],
+   "Command": "-P [12345a] -I [grep1.dat]"
+ },
+ {
+   "Test Case": "t634",
+   "Fault": [],
+   "Command": "-P [-c include] -I [grep1.dat]"
+ },
+ {
+   "Test Case": "t635",
+   "Fault": [],
+   "Command": "-P [include] -I [grep1.dat]"
+ },
+ {
+   "Test Case": "t636",
+   "Fault": [],
+   "Command": "-P [include ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t637",
+   "Fault": [],
+   "Command": "-P [-l include] -I [../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t638",
+   "Fault": [],
+   "Command": "-P [-L 12345a] -I [../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t639",
+   "Fault": [],
+   "Command": "-P [12345a] -I [../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t640",
+   "Fault": [],
+   "Command": "-P [\"--\" 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t641",
+   "Fault": [8],
+   "Command": "-P [- -- 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t642",
+   "Fault": [],
+   "Command": "-P [\"[z-a\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t643",
+   "Fault": [],
+   "Command": "-P [\"[5-1\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t644",
+   "Fault": [],
+   "Command": "-P [\"[F-A\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t645",
+   "Fault": [8],
+   "Command": "-P [-ff]"
+ },
+ {
+   "Test Case": "t646",
+   "Fault": [8],
+   "Command": "-P [-f]"
+ },
+ {
+   "Test Case": "t647",
+   "Fault": [],
+   "Command": "-P ['a$a' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t648",
+   "Fault": [],
+   "Command": "-P ['if$' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t649",
+   "Fault": [],
+   "Command": "-P ['switch$|else' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t650",
+   "Fault": [],
+   "Command": "-P [\"1\\+\\+\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t651",
+   "Fault": [2],
+   "Command": "-P [\"1\\?\\+\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t652",
+   "Fault": [2],
+   "Command": "-P [\"1\\+\\?\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t653",
+   "Fault": [8],
+   "Command": "-P [\"[\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t654",
+   "Fault": [8],
+   "Command": "-P [\"a[\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t655",
+   "Fault": [8],
+   "Command": "-P [\"a*[\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t656",
+   "Fault": [8],
+   "Command": "-P [\"[a\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t657",
+   "Fault": [8],
+   "Command": "-P [\"[1\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t658",
+   "Fault": [8],
+   "Command": "-P [\"[1-9\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t659",
+   "Fault": [],
+   "Command": "-P [\"[1-\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t660",
+   "Fault": [2],
+   "Command": "-P [\"[a-\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t661",
+   "Fault": [2],
+   "Command": "-P [\"[1a-\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t662",
+   "Fault": [8],
+   "Command": "-P [\"[[:alpha:\\]-5\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t663",
+   "Fault": [8],
+   "Command": "-P [\"[z[:digit:\\]-f\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t664",
+   "Fault": [8],
+   "Command": "-P [\"[[:alnum:\\]-9\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t665",
+   "Fault": [],
+   "Command": "-P [\"[1-2-9\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t666",
+   "Fault": [10],
+   "Command": "-P [\"[a-c-z\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t667",
+   "Fault": [11],
+   "Command": "-P [\"[1A-Z-A\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t668",
+   "Fault": [8],
+   "Command": "-P [\"[[:digit:\\]-1-9\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t669",
+   "Fault": [8],
+   "Command": "-P [\"[[:digit:\\]-A-Z\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t670",
+   "Fault": [8],
+   "Command": "-P [\"[[:digit:\\]-a-z\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t671",
+   "Fault": [8],
+   "Command": "-P [\"[1-2-\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t672",
+   "Fault": [8],
+   "Command": "-P [\"[1A-Z-\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t673",
+   "Fault": [8],
+   "Command": "-P [\"[Aa-z-\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t674",
+   "Fault": [8],
+   "Command": "-P [\"[1-\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t675",
+   "Fault": [8],
+   "Command": "-P [\"[1A-\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t676",
+   "Fault": [8],
+   "Command": "-P [\"[Aa-\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t677",
+   "Fault": [8],
+   "Command": "-P [\"[[:\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t678",
+   "Fault": [8],
+   "Command": "-P [\"a[[:\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t679",
+   "Fault": [8],
+   "Command": "-P [\"1-9[[:\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t680",
+   "Fault": [8],
+   "Command": "-P [\"[[:a:\\]\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t681",
+   "Fault": [8],
+   "Command": "-P [\"[[:1:\\]\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t682",
+   "Fault": [8],
+   "Command": "-P [\"[[:abcdefg:\\]\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t683",
+   "Fault": [8],
+   "Command": "-P [\"[[:alpha:\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t684",
+   "Fault": [8],
+   "Command": "-P [\"[a[:digit:\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t685",
+   "Fault": [8],
+   "Command": "-P [\"[[:alnum:\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t686",
+   "Fault": [8],
+   "Command": "-P ['\\' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t687",
+   "Fault": [8],
+   "Command": "-P ['if\\' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t688",
+   "Fault": [8],
+   "Command": "-P ['else\\' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t689",
+   "Fault": [12],
+   "Command": "-P ['\\`' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t690",
+   "Fault": [],
+   "Command": "-P ['if\\`' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t691",
+   "Fault": [],
+   "Command": "-P ['\\`else' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t692",
+   "Fault": [13],
+   "Command": "-P [\"\\'\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t693",
+   "Fault": [14],
+   "Command": "-P [\"if\\'\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t694",
+   "Fault": [],
+   "Command": "-P [\"\\'else\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t695",
+   "Fault": [8],
+   "Command": "-P [\"\\1\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t696",
+   "Fault": [8],
+   "Command": "-P [\"\\2\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t697",
+   "Fault": [8],
+   "Command": "-P [\"\\3\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t698",
+   "Fault": [8],
+   "Command": "-P [\"\\4\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t699",
+   "Fault": [8],
+   "Command": "-P [\"\\5\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t700",
+   "Fault": [8],
+   "Command": "-P [\"\\6\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t701",
+   "Fault": [8],
+   "Command": "-P [\"\\7\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t702",
+   "Fault": [8],
+   "Command": "-P [\"\\8\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t703",
+   "Fault": [8],
+   "Command": "-P [\"\\9\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t704",
+   "Fault": [8],
+   "Command": "-P [\"\\)\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t705",
+   "Fault": [8],
+   "Command": "-P [\"if\\)\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t706",
+   "Fault": [8],
+   "Command": "-P [\"[a-z\\]\\)\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t707",
+   "Fault": [15],
+   "Command": "-P [\"\\{\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t708",
+   "Fault": [8],
+   "Command": "-P [\"a\\{\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t709",
+   "Fault": [8],
+   "Command": "-P [\"[1-9\\]\\{\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t710",
+   "Fault": [8],
+   "Command": "-P [\"\\{2,1}\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t711",
+   "Fault": [8],
+   "Command": "-P [\"a\\{2,1}\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t712",
+   "Fault": [8],
+   "Command": "-P [\"\\{1\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t713",
+   "Fault": [8],
+   "Command": "-P [\"\\{1,2\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t714",
+   "Fault": [8],
+   "Command": "-P [\"a\\{1\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t715",
+   "Fault": [8],
+   "Command": "-P [\"\\{1\\{\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t716",
+   "Fault": [8],
+   "Command": "-P [\"\\{1,2\\{\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t717",
+   "Fault": [8],
+   "Command": "-P [\"[a-z\\]\\{1,2\\{\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t718",
+   "Fault": [2],
+   "Command": "-P [\"a\\{1,2\\}\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t719",
+   "Fault": [],
+   "Command": "-P [\"[1-9\\]\\{1,2\\}\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t720",
+   "Fault": [],
+   "Command": "-P [\"A\\{1,2\\}\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t721",
+   "Fault": [2],
+   "Command": "-P [\"A\\{0\\}\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t722",
+   "Fault": [2],
+   "Command": "-P [\"1\\{0\\}\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t723",
+   "Fault": [2],
+   "Command": "-P [\"[a-z\\]\\{0\\}\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t724",
+   "Fault": [8],
+   "Command": "-P [\"\\(\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t725",
+   "Fault": [8],
+   "Command": "-P [\"a\\(\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t726",
+   "Fault": [8],
+   "Command": "-P [\"a\\(a\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t727",
+   "Fault": [2],
+   "Command": "-P [\"\\|\\(a\\|b\\)1*2\\?3\\+\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t728",
+   "Fault": [2],
+   "Command": "-P [\"\\|\\(if\\|else\\)1*2\\?3\\+\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t729",
+   "Fault": [2],
+   "Command": "-P [\"\\|\\(for\\|12345\\)a*b\\?c\\+\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t730",
+   "Fault": [8],
+   "Command": "-P [\"a\" ../inputs/biginput.dat]"
+ },
+ {
+   "Test Case": "t731",
+   "Fault": [8],
+   "Command": "-P [\"[a-z\\]\" ../inputs/biginput.dat]"
+ },
+ {
+   "Test Case": "t732",
+   "Fault": [8],
+   "Command": "-P [\"5\\|7\" ../inputs/biginput.dat]"
+ },
+ {
+   "Test Case": "t733",
+   "Fault": [2],
+   "Command": "-P [-5 if ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t734",
+   "Fault": [],
+   "Command": "-P [-7 else ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t735",
+   "Fault": [],
+   "Command": "-P [-4 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t736",
+   "Fault": [2],
+   "Command": "-P [\"[[:alnum:\\]\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t737",
+   "Fault": [],
+   "Command": "-P [\"1[[:alnum:\\]\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t738",
+   "Fault": [2],
+   "Command": "-P [\"a*[[:alnum:\\]\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t739",
+   "Fault": [8],
+   "Command": "-P [-f ../inputs/biginput.dat ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t740",
+   "Fault": [8],
+   "Command": "-P [-f ../inputs/biginput2.dat ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t741",
+   "Fault": [8],
+   "Command": "-P [-f ../inputs/input_enter1 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t742",
+   "Fault": [8],
+   "Command": "-P [-f ../inputs/input_enter2 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t743",
+   "Fault": [8],
+   "Command": "-P [-f ../inputs/input_enter3 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t744",
+   "Fault": [8],
+   "Command": "-P [\"\\\\\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t745",
+   "Fault": [8],
+   "Command": "-P [\"1\\\\\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t746",
+   "Fault": [8],
+   "Command": "-P [\"a\\\\\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t747",
+   "Fault": [],
+   "Command": "-P [\"\\^\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t748",
+   "Fault": [],
+   "Command": "-P [\"1\\^\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t749",
+   "Fault": [],
+   "Command": "-P [\"a\\^\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t750",
+   "Fault": [2],
+   "Command": "-P [\"1\\|^\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t751",
+   "Fault": [2],
+   "Command": "-P [\"a\\|^\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t752",
+   "Fault": [],
+   "Command": "-P [\"\\(1\\)^\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t753",
+   "Fault": [],
+   "Command": "-P ['\\$' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t754",
+   "Fault": [],
+   "Command": "-P ['if\\$' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t755",
+   "Fault": [],
+   "Command": "-P ['main\\$' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t756",
+   "Fault": [2],
+   "Command": "-P ['$' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t757",
+   "Fault": [],
+   "Command": "-P ['if$' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t758",
+   "Fault": [],
+   "Command": "-P ['main$' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t759",
+   "Fault": [],
+   "Command": "-P ['$if' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t760",
+   "Fault": [],
+   "Command": "-P ['if$if' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t761",
+   "Fault": [],
+   "Command": "-P ['if$else' ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t762",
+   "Fault": [],
+   "Command": "-P [\">\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t763",
+   "Fault": [],
+   "Command": "-P [\"1>\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t764",
+   "Fault": [],
+   "Command": "-P [\"1>a\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t765",
+   "Fault": [],
+   "Command": "-P [\"B\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t766",
+   "Fault": [],
+   "Command": "-P [\"ABCDE\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t767",
+   "Fault": [16],
+   "Command": "-P [\"[A-B\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t768",
+   "Fault": [],
+   "Command": "-P [\"*\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t769",
+   "Fault": [],
+   "Command": "-P [\"*a\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t770",
+   "Fault": [],
+   "Command": "-P [\"*\\(abcde\\)\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t771",
+   "Fault": [],
+   "Command": "-P [\"\\+\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t772",
+   "Fault": [],
+   "Command": "-P [\"1\\+\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t773",
+   "Fault": [2],
+   "Command": "-P [\"if\\+\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t774",
+   "Fault": [],
+   "Command": "-P [\"+\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t775",
+   "Fault": [],
+   "Command": "-P [\"+if\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t776",
+   "Fault": [],
+   "Command": "-P [\"+else\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t777",
+   "Fault": [],
+   "Command": "-P [\"{\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t778",
+   "Fault": [],
+   "Command": "-P [\"if{\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t779",
+   "Fault": [],
+   "Command": "-P [\"else{\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t780",
+   "Fault": [],
+   "Command": "-P [\"1\\{10,11\\}2\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t781",
+   "Fault": [],
+   "Command": "-P [\"a\\{10,11\\}b\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t782",
+   "Fault": [],
+   "Command": "-P [\"if\\{10,11\\}else\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t783",
+   "Fault": [],
+   "Command": "-P [\"\\.\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t784",
+   "Fault": [],
+   "Command": "-P [\"1\\.a\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t785",
+   "Fault": [],
+   "Command": "-P [\"if\\.else\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t786",
+   "Fault": [],
+   "Command": "-P [\"\\[\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t787",
+   "Fault": [],
+   "Command": "-P [\"if\\[\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t788",
+   "Fault": [],
+   "Command": "-P [\"if\\[else\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t789",
+   "Fault": [17],
+   "Command": "-P [-i \"[A-z1\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t790",
+   "Fault": [18],
+   "Command": "-P [-i \"[C-x2\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t791",
+   "Fault": [],
+   "Command": "-P [-i \"if[Xx5\\]\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t792",
+   "Fault": [],
+   "Command": "-P [-X grep 12345 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t793",
+   "Fault": [],
+   "Command": "-P [-X grep abcde ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t794",
+   "Fault": [2],
+   "Command": "-P [-X grep if ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t795",
+   "Fault": [],
+   "Command": "-P [-e 1 -e 2 ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t796",
+   "Fault": [2],
+   "Command": "-P [-e a -e b ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t797",
+   "Fault": [2],
+   "Command": "-P [-e if -e else ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t798",
+   "Fault": [8],
+   "Command": "-P [-e 12345 -e abcde -f ../inputs/input_1.dat ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t799",
+   "Fault": [8],
+   "Command": "-P [-e if -e else -f ../inputs/input_1.dat ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t800",
+   "Fault": [8],
+   "Command": "-P [-e 1 -e 2 -e 3 -e 4 -e 5 -e 12345 -f ../inputs/input_1.dat ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t801",
+   "Fault": [8],
+   "Command": "-P [-f ../inputs/input_2.dat ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t802",
+   "Fault": [8],
+   "Command": "-P [-i -f ../inputs/input_2.dat ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t803",
+   "Fault": [8],
+   "Command": "-P [-v -f ../inputs/input_2.dat ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t804",
+   "Fault": [2],
+   "Command": "-P [\"\\(\\b\\)*\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t805",
+   "Fault": [2],
+   "Command": "-P [\"if\\(\\b\\)*\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t806",
+   "Fault": [1,2],
+   "Command": "-P [\"\\(\\b\\)\\+\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t807",
+   "Fault": [],
+   "Command": "-P [\"\\(\\a|b*\\|c\\?|d\\+\\)\\{1\\}\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t808",
+   "Fault": [],
+   "Command": "-P [\"\\(\\if|else*\\|for\\?|while\\+\\)\\{1\\}\" ../inputs/grep1.dat]"
+ },
+ {
+   "Test Case": "t809",
+   "Fault": [],
+   "Command": "-P [\"\\(\\do|12345*\\|main\\?|A\\+\\)\\{1\\}\" ../inputs/grep1.dat]"
+ }
+]

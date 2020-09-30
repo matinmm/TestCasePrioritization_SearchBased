@@ -1,0 +1,52 @@
+[
+  {
+    "Test Case": "test01",
+    "Fault": [1],
+    "Command" : "ThisIs/Testcase01"
+  },
+  {
+    "Test Case": "test02",
+    "Fault": [2,3,4,5],
+    "Command" : "ThisIs/Testcase02"
+  },
+  {
+    "Test Case": "test03",
+    "Fault": [1,2,3],
+    "Command" : "ThisIs/Testcase03"
+  },
+  {
+    "Test Case": "test04",
+    "Fault": [5,6,7],
+    "Command" : "ThisIs/Testcase04"
+  },
+  {
+    "Test Case": "test05",
+    "Fault": [1,2],
+    "Command" : "ThisIs/Testcase05"
+  },
+  {
+    "Test Case": "test06",
+    "Fault": [4,5,6,7],
+    "Command" : "ThisIs/Testcase06"
+  },
+  {
+    "Test Case": "test07",
+    "Fault": [2,3,4,5,6,7],
+    "Command" : "ThisIs/Testcase07"
+  },
+  {
+    "Test Case": "test08",
+    "Fault": [2,4],
+    "Command" : "ThisIs/Testcase08"
+  },
+  {
+    "Test Case": "test09",
+    "Fault": [3,6,7],
+    "Command" : "ThisIs/Testcase09"
+  },
+  {
+    "Test Case": "test10",
+    "Fault": [1,4,6,7],
+    "Command" : "ThisIs/Testcase10"
+  }
+]
